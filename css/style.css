@@ -1,0 +1,3131 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Sans+KR:wght@100&family=Orbitron&display=swap");
+header {
+  width: 100%;
+}
+header .inner {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+header .inner .logo {
+  position: absolute;
+  top: 40px;
+  left: 20%;
+  z-index: 11;
+}
+header .inner .logo a img {
+  width: 200px;
+  height: 165px;
+}
+header .inner .gnbWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+header .inner .gnbWrap .Bggnb {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: #61001f;
+  top: 70px;
+  left: 0;
+}
+header .inner .gnbWrap #gnb {
+  position: absolute;
+  top: 70px;
+  left: 30%;
+  text-align: center;
+  margin-left: 50px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+header .inner .gnbWrap #gnb li {
+  float: left;
+  width: 300px;
+  position: relative;
+}
+header .inner .gnbWrap #gnb li:hover a {
+  background-color: #fff;
+  color: #333;
+}
+header .inner .gnbWrap #gnb li.on a {
+  background-color: #fff;
+  color: #333;
+}
+header .inner .gnbWrap #gnb li a {
+  display: block;
+  width: 100%;
+  height: 100px;
+  font: bold 22px/100px "맑은 고딕";
+  color: #fff;
+  transition: all 0.5s;
+}
+header .inner .gnbWrap #gnb li .sub {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  text-align: center;
+  display: none;
+  /* 바닐라 자바스크립트에서 추가 */
+  overflow: hidden;
+  transition: height 1s ease;
+  /* ease : 기본값 */
+}
+header .inner .gnbWrap #gnb li .sub li a {
+  display: block;
+  width: 300px;
+  height: 50px;
+  font: 16px/50px "맑은 고딕";
+  color: #ddd;
+  text-align: center;
+  background-color: #666;
+  transition: all 0.3s;
+}
+header .inner .gnbWrap #gnb li .sub li a:hover {
+  background-color: #e9e9e9;
+  color: #111;
+}
+
+@media screen and (max-width: 1440px) {
+  header .inner .logo {
+    left: 10%;
+  }
+  header .inner .until li a {
+    padding: 10px 20px;
+  }
+  header .inner .gnbWrap #gnb {
+    left: 25%;
+    margin-left: 60px;
+    z-index: 10;
+    width: 65%;
+  }
+  header .inner .gnbWrap #gnb li {
+    width: 20vw;
+  }
+  header .inner .gnbWrap #gnb li .sub li a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1197px) {
+  header .inner .logo {
+    left: 10%;
+  }
+  header .inner .until li a {
+    padding: 10px 20px;
+  }
+  header .inner .gnbWrap #gnb {
+    left: 25%;
+    margin-left: 60px;
+    z-index: 10;
+    width: 65%;
+  }
+  header .inner .gnbWrap #gnb li {
+    width: 20vw;
+  }
+  header .inner .gnbWrap #gnb li .sub li a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header .inner .gnbWrap #gnb {
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .inner .logo {
+    left: 5%;
+  }
+  header .inner .until li a {
+    padding: 10px 20px;
+  }
+  header .inner .gnbWrap #gnb {
+    left: 25%;
+    margin-left: 60px;
+    z-index: 10;
+    width: 65%;
+  }
+  header .inner .gnbWrap #gnb li {
+    width: 20vw;
+  }
+  header .inner .gnbWrap #gnb li .sub li a {
+    width: 100%;
+  }
+}
+footer {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-color: #333;
+}
+footer .inner {
+  position: absolute;
+  top: 80px;
+  left: 30%;
+  text-align: center;
+}
+footer .inner .footerSns {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+footer .inner .footerSns li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .inner .footerText p {
+  font: 20px/1.3 "맑은 고딕";
+  padding-bottom: 20px;
+  color: #eee;
+}
+footer .inner .footerText span {
+  font: bold 22px/1 "맑은 고딕";
+  color: #eee;
+}
+
+@media screen and (max-width: 1440px) {
+  footer .inner {
+    left: 21.5%;
+  }
+}
+@media screen and (max-width: 1197px) {
+  footer .inner {
+    left: 17%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer .inner {
+    left: 18%;
+  }
+  footer .inner .footerText p {
+    font: 16px/1.3 "맑은 고딕";
+  }
+  footer .inner .footerText span {
+    font: bold 20px/1 "맑은 고딕";
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .inner {
+    left: 9%;
+  }
+  footer .inner .footerText p {
+    font: 16px/1.3 "맑은 고딕";
+  }
+  footer .inner .footerText span {
+    font: bold 20px/1 "맑은 고딕";
+  }
+}
+@font-face {
+  font-family: "SeoulHangangM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  width: 100%;
+  margin-top: -30px;
+  background-color: #fff;
+}
+main .banners {
+  width: 100%;
+  height: 17vh;
+  position: relative;
+  background-color: #61001f;
+  overflow: hidden;
+}
+main .banners #banner1 {
+  width: 50%;
+  height: 17vh;
+  background-color: #555;
+  display: inline-block;
+}
+main .banners #banner1 .baro .lucky {
+  position: absolute;
+  top: 1vh;
+  left: 19vw;
+}
+main .banners #banner1 .baro .lucky img {
+  width: 5vw;
+  height: 15vh;
+}
+main .banners #banner1 .baro .star {
+  position: absolute;
+  top: 1vh;
+  left: 25vw;
+}
+main .banners #banner1 .baro .star img {
+  width: 5vw;
+  height: 15vh;
+}
+main .banners #banner1 .baro span {
+  position: absolute;
+  top: 4vh;
+  left: 35vw;
+  font: 22px/1 "맑은 고딕";
+  color: #fff;
+}
+main .banners #banner1 .baro a {
+  position: absolute;
+  bottom: 2vh;
+  left: 34.5vw;
+  outline: none;
+  border: none;
+  padding: 10px 55px;
+  cursor: pointer;
+  font: bold 30px/1.2 "arial";
+  background-color: #a50034;
+  color: #fff;
+}
+main .banners #banner1 .baro a:hover {
+  background-color: #fff;
+  color: #a50034;
+}
+main .banners #banner2 {
+  width: 50%;
+  height: 17vh;
+  position: relative;
+  float: right;
+}
+main .banners #banner2 .baro2 {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+main .banners #banner2 .baro2 li {
+  width: 100%;
+  height: 17vh;
+  text-align: center;
+}
+main .banners #banner2 .baro2 li h3 {
+  font: bold 26px/6vh "맑은 고딕";
+  color: #fff;
+}
+main .banners #banner2 .baro2 li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font: 25px/8vh "맑은 고딕";
+  color: #fff;
+}
+main .banners #banner2 .baro2 li p span {
+  font: bold 42px/8vh "맑은 고딕";
+  margin: 0 20px;
+}
+main .banners #banner2 .baro2 li p span .span1 {
+  color: #f3306e;
+  margin: 0px;
+}
+main .banners #banner2 .navi {
+  display: flex;
+  position: absolute;
+  top: 6vh;
+  left: 20px;
+  margin-bottom: 150px;
+}
+main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after {
+  left: 25px;
+  transform-origin: left center;
+}
+main .banners #banner2 .navi .prev span {
+  left: 25px;
+}
+main .banners #banner2 .navi .next {
+  position: absolute;
+  left: 40vw;
+}
+main .banners #banner2 .navi .next::before, main .banners #banner2 .navi .next::after {
+  right: 25px;
+  transform-origin: right center;
+}
+main .banners #banner2 .navi .next span {
+  right: 25px;
+}
+main .banners #banner2 .navi .prev,
+main .banners #banner2 .navi .next {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #555;
+  cursor: pointer;
+  position: relative;
+  bottom: 5px;
+  background-color: #fff;
+}
+main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after,
+main .banners #banner2 .navi .next::before,
+main .banners #banner2 .navi .next::after {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 2px;
+  background-color: #555;
+  position: absolute;
+}
+main .banners #banner2 .navi .prev::before,
+main .banners #banner2 .navi .next::before {
+  top: 49%;
+  transform: rotate(45deg) translateX(0px);
+}
+main .banners #banner2 .navi .prev::after,
+main .banners #banner2 .navi .next::after {
+  bottom: 49%;
+  transform: rotate(-45deg) translateX(0px);
+}
+main .banners #banner2 .navi .prev span,
+main .banners #banner2 .navi .next span {
+  width: 24px;
+  height: 2px;
+  background-color: #555;
+  position: absolute;
+  top: 49%;
+  opacity: 1;
+}
+@media screen and (max-width: 1440px) {
+  main .banners #banner1 .baro span {
+    left: 33vw;
+  }
+  main .banners #banner1 .baro a {
+    bottom: 2vh;
+    left: 32.5vw;
+  }
+  main .banners #banner2 .baro2 li p {
+    font: 23px/8vh "맑은 고딕";
+    color: #fff;
+  }
+  main .banners #banner2 .baro2 li p span {
+    font: bold 39px/8vh "맑은 고딕";
+    margin: 0 20px;
+  }
+  main .banners #banner2 .navi .next {
+    left: 37vw;
+  }
+}
+@media screen and (max-width: 1197px) {
+  main .banners #banner1 .baro .lucky {
+    left: 13vw;
+  }
+  main .banners #banner1 .baro .star {
+    left: 19vw;
+  }
+  main .banners #banner1 .baro span {
+    left: 29vw;
+  }
+  main .banners #banner1 .baro a {
+    left: 28.5vw;
+  }
+  main .banners #banner2 .baro2 li h3 {
+    font: bold 23px/6vh "맑은 고딕";
+    color: #fff;
+  }
+  main .banners #banner2 .baro2 li p {
+    font: 20px/8vh "맑은 고딕";
+  }
+  main .banners #banner2 .baro2 li p span {
+    font: bold 37px/8vh "맑은 고딕";
+    margin: 0 5px;
+  }
+  main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after {
+    left: 17px;
+    transform-origin: left center;
+  }
+  main .banners #banner2 .navi .prev span {
+    left: 17px;
+  }
+  main .banners #banner2 .navi .next {
+    position: absolute;
+    left: 42vw;
+  }
+  main .banners #banner2 .navi .next::before, main .banners #banner2 .navi .next::after {
+    right: 17px;
+    transform-origin: right center;
+  }
+  main .banners #banner2 .navi .next span {
+    right: 17px;
+  }
+  main .banners #banner2 .navi .prev,
+  main .banners #banner2 .navi .next {
+    width: 60px;
+    height: 60px;
+  }
+  main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after,
+  main .banners #banner2 .navi .next::before,
+  main .banners #banner2 .navi .next::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+  }
+  main .banners #banner2 .navi .prev::before,
+  main .banners #banner2 .navi .next::before {
+    top: 49%;
+    transform: rotate(45deg) translateX(0px);
+  }
+  main .banners #banner2 .navi .prev::after,
+  main .banners #banner2 .navi .next::after {
+    bottom: 49%;
+    transform: rotate(-45deg) translateX(0px);
+  }
+  main .banners #banner2 .navi .prev span,
+  main .banners #banner2 .navi .next span {
+    width: 24px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+    top: 49%;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .banners #banner1 {
+    width: 30%;
+  }
+  main .banners #banner1 .baro .lucky {
+    left: 13vw;
+    display: none;
+  }
+  main .banners #banner1 .baro .star {
+    left: 19vw;
+    display: none;
+  }
+  main .banners #banner1 .baro span {
+    left: 6vw;
+  }
+  main .banners #banner1 .baro a {
+    left: 5.5vw;
+  }
+  main .banners #banner2 {
+    width: 70%;
+    height: 17vh;
+    position: relative;
+    float: right;
+  }
+  main .banners #banner2 .baro2 {
+    width: 400%;
+    height: 400px;
+    display: flex;
+  }
+  main .banners #banner2 .baro2 li {
+    width: 100%;
+    height: 17vh;
+    overflow: hidden;
+    text-align: center;
+  }
+  main .banners #banner2 .baro2 li h3 {
+    font: bold 23px/6vh "맑은 고딕";
+    color: #fff;
+  }
+  main .banners #banner2 .baro2 li p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font: 20px/8vh "맑은 고딕";
+    color: #fff;
+  }
+  main .banners #banner2 .baro2 li p span {
+    font: bold 37px/8vh "맑은 고딕";
+    margin: 0 20px;
+  }
+  main .banners #banner2 .baro2 li p span .span1 {
+    color: #f3306e;
+    margin: 0px;
+  }
+  main .banners #banner2 .navi {
+    display: flex;
+    position: absolute;
+    top: 6vh;
+    left: 5vw;
+  }
+  main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after {
+    left: 25px;
+    transform-origin: left center;
+  }
+  main .banners #banner2 .navi .prev span {
+    left: 25px;
+  }
+  main .banners #banner2 .navi .next {
+    position: absolute;
+    left: 47vw;
+  }
+  main .banners #banner2 .navi .next::before, main .banners #banner2 .navi .next::after {
+    right: 25px;
+    transform-origin: right center;
+  }
+  main .banners #banner2 .navi .next span {
+    right: 25px;
+  }
+  main .banners #banner2 .navi .prev,
+  main .banners #banner2 .navi .next {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #555;
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+    background-color: #fff;
+  }
+  main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after,
+  main .banners #banner2 .navi .next::before,
+  main .banners #banner2 .navi .next::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+  }
+  main .banners #banner2 .navi .prev::before,
+  main .banners #banner2 .navi .next::before {
+    top: 49%;
+    transform: rotate(45deg) translateX(0px);
+  }
+  main .banners #banner2 .navi .prev::after,
+  main .banners #banner2 .navi .next::after {
+    bottom: 49%;
+    transform: rotate(-45deg) translateX(0px);
+  }
+  main .banners #banner2 .navi .prev span,
+  main .banners #banner2 .navi .next span {
+    width: 24px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+    top: 49%;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .banners #banner1 {
+    width: 0%;
+  }
+  main .banners #banner1 .baro .lucky {
+    left: 13vw;
+    display: none;
+  }
+  main .banners #banner1 .baro .star {
+    left: 19vw;
+    display: none;
+  }
+  main .banners #banner1 .baro span {
+    left: 6vw;
+    display: none;
+  }
+  main .banners #banner1 .baro a {
+    left: 5.5vw;
+    display: none;
+  }
+  main .banners #banner2 {
+    width: 100%;
+  }
+  main .banners #banner2 .baro2 li h3 {
+    font: bold 23px/6vh "맑은 고딕";
+    color: #fff;
+  }
+  main .banners #banner2 .baro2 li p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font: 20px/8vh "맑은 고딕";
+    color: #fff;
+  }
+  main .banners #banner2 .baro2 li p span {
+    font: bold 37px/8vh "맑은 고딕";
+    margin: 0 20px;
+  }
+  main .banners #banner2 .baro2 li p span .span1 {
+    color: #f3306e;
+    margin: 0px;
+  }
+  main .banners #banner2 .navi {
+    display: flex;
+    position: absolute;
+    top: 6vh;
+    left: 5vw;
+  }
+  main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after {
+    left: 25px;
+    transform-origin: left center;
+  }
+  main .banners #banner2 .navi .prev span {
+    left: 25px;
+  }
+  main .banners #banner2 .navi .next {
+    position: absolute;
+    left: 73vw;
+  }
+  main .banners #banner2 .navi .next::before, main .banners #banner2 .navi .next::after {
+    right: 25px;
+    transform-origin: right center;
+  }
+  main .banners #banner2 .navi .next span {
+    right: 25px;
+  }
+  main .banners #banner2 .navi .prev,
+  main .banners #banner2 .navi .next {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #555;
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+    background-color: #fff;
+  }
+  main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after,
+  main .banners #banner2 .navi .next::before,
+  main .banners #banner2 .navi .next::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+  }
+  main .banners #banner2 .navi .prev::before,
+  main .banners #banner2 .navi .next::before {
+    top: 49%;
+    transform: rotate(45deg) translateX(0px);
+  }
+  main .banners #banner2 .navi .prev::after,
+  main .banners #banner2 .navi .next::after {
+    bottom: 49%;
+    transform: rotate(-45deg) translateX(0px);
+  }
+  main .banners #banner2 .navi .prev span,
+  main .banners #banner2 .navi .next span {
+    width: 24px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+    top: 49%;
+    opacity: 1;
+  }
+}
+main #sosik {
+  width: 100%;
+  height: 55vh;
+  position: relative;
+  background-color: #e9e9e9;
+}
+main #sosik .inner {
+  position: absolute;
+  top: 50px;
+  left: 430px;
+  display: flex;
+}
+main #sosik .inner h1 {
+  font: bold 40px/1 "맑은 고딕";
+  color: #555;
+}
+main #sosik .inner span {
+  font: 16px/60px "맑은 고딕";
+  padding-left: 20px;
+  color: #111;
+}
+main #sosik .NGboard {
+  flex: 1.5;
+  height: 60px;
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  cursor: pointer;
+}
+main #sosik .NGboard .tab {
+  display: flex;
+  width: 500px;
+  height: 60px;
+}
+main #sosik .NGboard .tab li {
+  width: 150px;
+  height: 50px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  border: 1.5px solid #000;
+  border-bottom: none;
+}
+main #sosik .NGboard .tab li.on {
+  background-color: #ddd;
+}
+main #sosik .NGboard .tab li.on a {
+  color: #333;
+}
+main #sosik .NGboard .tab li a {
+  font: bold 20px/50px "맑은 고딕";
+  color: #fff;
+}
+main #sosik .NGboard .content {
+  width: 700px;
+  height: 180px;
+  position: relative;
+}
+main #sosik .NGboard .content div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  z-index: 1;
+}
+main #sosik .NGboard .content div.on {
+  opacity: 1;
+  z-index: 2;
+}
+main #sosik .NGboard .content #notice,
+main #sosik .NGboard .content #event,
+main #sosik .NGboard .content #board {
+  justify-content: flex-start;
+  width: 650px;
+  height: 200px;
+  padding: 30px;
+  border: 2px solid #000;
+  background-color: #fff;
+  border-radius: 15px;
+  position: absolute;
+  left: -30px;
+  top: -10px;
+}
+main #sosik .NGboard .content #notice ul li,
+main #sosik .NGboard .content #event ul li,
+main #sosik .NGboard .content #board ul li {
+  width: 580px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main #sosik .NGboard .content #notice ul li a,
+main #sosik .NGboard .content #event ul li a,
+main #sosik .NGboard .content #board ul li a {
+  font: bold 20px/1.3 "맑은 고딕";
+  color: #000;
+}
+main #sosik .NGboard .content #notice ul li span,
+main #sosik .NGboard .content #event ul li span,
+main #sosik .NGboard .content #board ul li span {
+  font: 16px/2 "맑은 고딕";
+}
+main #sosik .snsContent {
+  position: relative;
+}
+main #sosik .snsContent a {
+  width: 70px;
+  height: 70px;
+}
+main #sosik .snsContent a .plusBtn {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 350px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #a50034;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main #sosik .snsContent a .plusBtn::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background-color: #a50034;
+  position: absolute;
+  top: 49%;
+  transform: rotate(0deg) translateX(25%);
+}
+main #sosik .snsContent a .plusBtn::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background-color: #a50034;
+  position: absolute;
+  top: 49%;
+  transform: rotate(90deg) translateY(-10px);
+}
+main #sosik .snsContent .inner {
+  display: block;
+  position: absolute;
+  top: 130px;
+  left: 1150px;
+  width: 400px;
+  height: 320px;
+  background-color: #aaa;
+  border-radius: 20px;
+  padding: 50px 0 0 30px;
+  z-index: 10;
+}
+main #sosik .snsContent .inner .title {
+  display: flex;
+}
+main #sosik .snsContent .inner .title h2 {
+  font: bold 40px/1 "맑은 고딕";
+  color: #a50034;
+}
+main #sosik .snsContent .inner .title h3 {
+  font: bold 40px/1 "맑은 고딕";
+  margin-left: 15px;
+}
+main #sosik .snsContent .inner .subTitle {
+  margin-top: 20px;
+}
+main #sosik .snsContent .inner .subTitle span {
+  font: 17px/1.3 "맑은 고딕";
+  text-align: left;
+}
+main #sosik .snsContent .inner .sns ul li {
+  margin-top: 25px;
+  cursor: pointer;
+}
+main #sosik .snsContent .inner .sns ul li:nth-child(1) {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  background-image: url(../images/sns.png);
+  background-repeat: no-repeat;
+}
+main #sosik .snsContent .inner .sns ul li:nth-child(1) a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+main #sosik .snsContent .inner .sns ul li:nth-child(2) {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  background-image: url(../images/sns.png);
+  background-repeat: no-repeat;
+  background-position: 50% 74%;
+  margin-top: -110px;
+  margin-left: 120px;
+}
+main #sosik .snsContent .inner .sns ul li:nth-child(2) a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+main #sosik .snsContent .inner .sns ul li:nth-child(3) {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  background-image: url(../images/sns.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-top: -110px;
+  margin-left: 240px;
+}
+main #sosik .snsContent .inner .sns ul li:nth-child(3) a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@media screen and (max-width: 1440px) {
+  main #sosik .inner {
+    top: 5vh;
+    left: 12vw;
+  }
+  main #sosik .NGboard {
+    top: 22vh;
+    left: 13vw;
+  }
+  main #sosik .snsContent a .plusBtn {
+    top: 3vh;
+    right: 14vw;
+  }
+  main #sosik .snsContent .inner {
+    left: 58vw;
+  }
+}
+@media screen and (max-width: 1197px) {
+  main #sosik .inner {
+    top: 5vh;
+    left: 7vw;
+  }
+  main #sosik .NGboard {
+    top: 22vh;
+    left: 10vw;
+  }
+  main #sosik .snsContent a .plusBtn {
+    top: 3vh;
+    right: 5vw;
+  }
+  main #sosik .snsContent .inner {
+    left: 63vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main #sosik .inner {
+    top: 5vh;
+    left: 7vw;
+  }
+  main #sosik .NGboard {
+    top: 22vh;
+    left: 10vw;
+  }
+  main #sosik .NGboard .tab li {
+    width: 10vw;
+  }
+  main #sosik .NGboard .tab li a {
+    font: bold 16px/50px "맑은 고딕";
+  }
+  main #sosik .NGboard .content #notice,
+  main #sosik .NGboard .content #event,
+  main #sosik .NGboard .content #board {
+    width: 50vw;
+  }
+  main #sosik .NGboard .content #notice ul,
+  main #sosik .NGboard .content #event ul,
+  main #sosik .NGboard .content #board ul {
+    width: 50vw;
+  }
+  main #sosik .NGboard .content #notice ul li a,
+  main #sosik .NGboard .content #event ul li a,
+  main #sosik .NGboard .content #board ul li a {
+    font: bold 16px/1.3 "맑은 고딕";
+    color: #000;
+  }
+  main #sosik .snsContent a .plusBtn {
+    top: 3vh;
+    right: 5vw;
+  }
+  main #sosik .snsContent .inner {
+    left: 58vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #sosik .inner {
+    top: 5vh;
+    left: 7vw;
+  }
+  main #sosik .NGboard .tab li {
+    width: 13.5vw;
+  }
+  main #sosik .NGboard .tab li a {
+    font: bold 14px/50px "맑은 고딕";
+  }
+  main #sosik .NGboard .content #notice,
+  main #sosik .NGboard .content #event,
+  main #sosik .NGboard .content #board {
+    width: 50vw;
+  }
+  main #sosik .NGboard .content #notice ul,
+  main #sosik .NGboard .content #event ul,
+  main #sosik .NGboard .content #board ul {
+    width: 50vw;
+  }
+  main #sosik .NGboard .content #notice ul li a,
+  main #sosik .NGboard .content #event ul li a,
+  main #sosik .NGboard .content #board ul li a {
+    font: bold 16px/1.3 "맑은 고딕";
+    color: #000;
+  }
+  main #sosik .snsContent {
+    position: relative;
+  }
+  main #sosik .snsContent a .plusBtn {
+    position: absolute;
+    top: 38vh;
+    left: 82vw;
+    z-index: 11;
+  }
+  main #sosik .snsContent .inner {
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: 60vw;
+    width: 36vw;
+    height: 320px;
+    background-color: #aaa;
+    border-radius: 20px;
+    padding: 20px 0 0 30px;
+    z-index: 10;
+  }
+  main #sosik .snsContent .inner .title {
+    display: flex;
+  }
+  main #sosik .snsContent .inner .title h2 {
+    margin-left: 2vw;
+    font: bold 22px/1 "맑은 고딕";
+    color: #a50034;
+  }
+  main #sosik .snsContent .inner .title h3 {
+    font: bold 22px/1 "맑은 고딕";
+    margin-left: 1vw;
+  }
+  main #sosik .snsContent .inner .subTitle {
+    margin-top: 20px;
+  }
+  main #sosik .snsContent .inner .subTitle span {
+    font: 17px/1.3 "맑은 고딕";
+    text-align: left;
+    display: none;
+  }
+  main #sosik .snsContent .inner .sns ul li {
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  main #sosik .snsContent .inner .sns ul li:nth-child(1) {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    background-image: url(../images/sns.png);
+    background-repeat: no-repeat;
+  }
+  main #sosik .snsContent .inner .sns ul li:nth-child(1) a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  main #sosik .snsContent .inner .sns ul li:nth-child(2) {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    background-image: url(../images/sns.png);
+    background-repeat: no-repeat;
+    background-position: 50% 74%;
+    margin-top: -110px;
+    margin-left: 120px;
+  }
+  main #sosik .snsContent .inner .sns ul li:nth-child(2) a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  main #sosik .snsContent .inner .sns ul li:nth-child(3) {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    background-image: url(../images/sns.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    bottom: 3vh;
+    left: -28.5vw;
+  }
+  main #sosik .snsContent .inner .sns ul li:nth-child(3) a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+main #News {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  background-color: #fff;
+}
+main #News .inner {
+  width: 650px;
+  height: 100%;
+  position: relative;
+}
+main #News .inner .font {
+  position: absolute;
+  top: 30%;
+  right: 1vw;
+  transform: translate(-50%, -50%);
+}
+main #News .inner .font strong {
+  font: bold 45px/1 "arial";
+  color: #a50034;
+}
+main #News .inner .font .btn {
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+main #News .inner .font .btn span {
+  font: 25px/50px "맑은 고딕";
+  color: #222;
+  transition: 0.5s;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+}
+main #News .inner .font .btn span:hover::before {
+  width: 100%;
+  transition: 0.2s;
+}
+main #News .inner .font .btn span:hover::after {
+  width: 40px;
+  transition: 0.2s 0.2s;
+}
+main #News .inner .font .btn span::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0%;
+  height: 3px;
+  background-color: #a50034;
+}
+main #News .inner .font .btn span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  width: 0px;
+  height: 3px;
+  background-color: #a50034;
+  transform-origin: right center;
+  transform: rotate(45deg);
+  right: 0;
+}
+main #News .wrap {
+  padding-top: 70px;
+  position: relative;
+}
+main #News .wrap article {
+  display: flex;
+  height: 23vh;
+  margin-right: 2vw;
+}
+main #News .wrap article .pic {
+  width: 105px;
+  height: 70px;
+  margin-right: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+main #News .wrap article .content li {
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+main #News .wrap article .content li a {
+  font: bold 22px/1 "맑은 고딕";
+  color: #000;
+}
+main #News .wrap article .content li span {
+  font: 16px/1 "맑은 고딕";
+}
+@media screen and (max-width: 1440px) {
+  main #News .inner {
+    width: 23vw;
+  }
+}
+@media screen and (max-width: 1197px) {
+  main #News .inner {
+    width: 30vw;
+    height: 100%;
+  }
+  main #News .wrap {
+    padding-top: 70px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main #News .inner {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #News .inner {
+    width: 61vw;
+  }
+  main #News .wrap article .content li {
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+  main #News .wrap article .content li a {
+    font: bold 20px/1 "맑은 고딕";
+    color: #000;
+  }
+  main #News .wrap article .content li span {
+    font: 12px/1 "맑은 고딕";
+  }
+}
+main #photo {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  background-color: #e9e9e9;
+  overflow: hidden;
+}
+main #photo .inner {
+  position: absolute;
+  top: 50px;
+  left: 430px;
+}
+main #photo .inner h2 {
+  font: bold 40px/1 "맑은 고딕";
+  color: #555;
+}
+main #photo .wrap ul {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  width: 150%;
+  overflow: hidden;
+}
+main #photo .wrap ul li {
+  width: 16.6666666667%;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #photo .wrap ul li img {
+  width: 300px;
+  height: 200px;
+}
+main #photo .btn {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  left: 29vw;
+  z-index: 10;
+}
+main #photo .btn .prev::before, main #photo .btn .prev::after {
+  left: 25px;
+  transform-origin: left center;
+  position: absolute;
+  top: 49%;
+}
+main #photo .btn .prev span {
+  left: 25px;
+}
+main #photo .btn .next {
+  position: absolute;
+  left: 730px;
+}
+main #photo .btn .next::before, main #photo .btn .next::after {
+  right: 25px;
+  transform-origin: right center;
+  position: absolute;
+  bottom: 49%;
+}
+main #photo .btn .next span {
+  right: 25px;
+}
+main #photo .btn .prev, main #photo .btn .next {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  position: relative;
+  bottom: 5px;
+  transition: 0.2s;
+}
+main #photo .btn .prev::before, main #photo .btn .prev::after, main #photo .btn .next::before, main #photo .btn .next::after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  display: block;
+  background-color: #000;
+}
+main #photo .btn .prev::before, main #photo .btn .next::before {
+  top: 49%;
+  transform: rotate(45deg) translateX(0px);
+}
+main #photo .btn .prev::after, main #photo .btn .next::after {
+  bottom: 49%;
+  transform: rotate(-45deg) translateX(0px);
+}
+main #photo .btn .prev span, main #photo .btn .next span {
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 49%;
+  opacity: 1;
+}
+main #photo .btn .prev:hover, main #photo .btn .next:hover {
+  transform: scale(1.5);
+}
+main #photo #more {
+  display: block;
+  position: absolute;
+  width: 370px;
+  left: 240px;
+  bottom: 5px;
+  height: 70px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font: 18px/30px "맑은 고딕";
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+main #photo #more:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+@media screen and (max-width: 1440px) {
+  main #photo {
+    overflow: hidden;
+  }
+  main #photo .inner {
+    left: 12vw;
+  }
+  main #photo .wrap ul li {
+    margin: 5px;
+  }
+  main #photo .btn {
+    left: 21vw;
+  }
+}
+@media screen and (max-width: 1197px) {
+  main #photo {
+    overflow: hidden;
+  }
+  main #photo .inner {
+    left: 7vw;
+  }
+  main #photo .wrap ul li {
+    margin: 10px;
+  }
+  main #photo .btn {
+    left: 16vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main #photo {
+    overflow: hidden;
+  }
+  main #photo .inner {
+    left: 7vw;
+  }
+  main #photo .wrap ul li {
+    margin-left: 4vw;
+  }
+  main #photo .btn {
+    left: 8vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #photo {
+    overflow: hidden;
+  }
+  main #photo .inner {
+    left: 7vw;
+  }
+  main #photo .wrap ul li {
+    margin-left: 10vw;
+    margin-right: 7vw;
+  }
+  main #photo .btn {
+    left: 2vw;
+  }
+  main #photo .btn .next {
+    position: absolute;
+    left: 88vw;
+  }
+  main #photo .btn #more {
+    display: block;
+    position: absolute;
+    width: 370px;
+    left: 26vw;
+    bottom: 5px;
+    height: 70px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font: 18px/30px "맑은 고딕";
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  main #photo .btn #more:hover {
+    background-color: #aaa;
+    color: #fff;
+  }
+}
+main #slide {
+  display: block;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  z-index: 1;
+}
+main #slide .frame li {
+  position: absolute;
+  overflow: hidden;
+}
+main #slide .frame li img {
+  width: 100vw;
+  height: 50vh;
+}
+@media screen and (max-width: 1440px) {
+  main #slide {
+    height: 39vh;
+  }
+  main #slide .frame li img {
+    height: 39vh;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 1197px) {
+  main #slide {
+    height: 34vh;
+  }
+  main #slide .frame li img {
+    height: 34vh;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main #slide {
+    height: 29vh;
+  }
+  main #slide .frame li img {
+    height: 29vh;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #slide {
+    height: 24vh;
+  }
+  main #slide .frame li img {
+    height: 24vh;
+    width: 100vw;
+  }
+}
+main #video {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background-color: #fff;
+}
+main #video a {
+  width: 70px;
+  height: 70px;
+}
+main #video a .plusBtn {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 350px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+main #video a .plusBtn:before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  top: 49%;
+  transform: rotate(0deg) translateX(25%);
+}
+main #video a .plusBtn:after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  top: 49%;
+  transform: rotate(90deg) translateY(-10px);
+}
+main #video .inner {
+  position: absolute;
+  top: 50px;
+  left: 430px;
+  display: flex;
+}
+main #video .inner h2 {
+  font: bold 40px/1 "맑은 고딕";
+  color: #a50034;
+}
+main #video .inner span {
+  font: 16px/60px "맑은 고딕";
+  padding-left: 20px;
+}
+main #video .inner p {
+  position: absolute;
+  top: 60px;
+  left: 350px;
+  width: 500px;
+  font-size: 17px;
+  color: red;
+}
+main #video .videoList {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main #video .videoList ul li:nth-child(1) {
+  position: absolute;
+  top: 160px;
+  left: 430px;
+  width: 29vw;
+  height: 100%;
+  z-index: 10;
+  padding: 20px;
+}
+main #video .videoList ul li:nth-child(1) h3 {
+  font: bold 28px/1.4 "맑은 고딕";
+  margin-bottom: 15px;
+}
+main #video .videoList ul li:nth-child(1) span {
+  font: 20px/1 "arial";
+}
+main #video .videoList ul li:nth-child(1) a img {
+  width: 100%;
+  height: 32vh;
+  margin-top: 15px;
+}
+main #video .videoList ul li:nth-child(2) {
+  position: absolute;
+  top: 180px;
+  right: 17vw;
+  display: flex;
+  padding: 20px;
+}
+main #video .videoList ul li:nth-child(2) img {
+  width: 170px;
+  transition: 0.5s;
+}
+main #video .videoList ul li:nth-child(2) div h3 {
+  font: bold 18px/1.2 "맑은 고딕";
+  margin-left: 110px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main #video .videoList ul li:nth-child(2) div span {
+  margin-left: 110px;
+  font: 15px/1 "arial";
+}
+main #video .videoList ul li:nth-child(3) {
+  position: absolute;
+  top: 340px;
+  right: 22vw;
+  display: flex;
+  padding: 20px;
+}
+main #video .videoList ul li:nth-child(3) img {
+  width: 170px;
+  transition: 0.5s;
+}
+main #video .videoList ul li:nth-child(3) div h3 {
+  font: bold 18px/1.2 "맑은 고딕";
+  margin-left: 110px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main #video .videoList ul li:nth-child(3) div span {
+  margin-left: 110px;
+  font: 15px/1 "arial";
+}
+main #video .videoList ul li:nth-child(4) {
+  position: absolute;
+  bottom: 70px;
+  right: 19vw;
+  display: flex;
+  padding: 20px;
+}
+main #video .videoList ul li:nth-child(4) img {
+  width: 170px;
+  transition: 0.5s;
+}
+main #video .videoList ul li:nth-child(4) div h3 {
+  font: bold 18px/1.2 "맑은 고딕";
+  margin-left: 110px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main #video .videoList ul li:nth-child(4) div span {
+  margin-left: 110px;
+  font: 15px/1 "arial";
+}
+@media screen and (max-width: 1440px) {
+  main #video {
+    height: 74vh;
+  }
+  main #video a .plusBtn {
+    top: 3vh;
+    right: 14vw;
+  }
+  main #video .inner {
+    left: 12vw;
+  }
+  main #video .videoList ul li:nth-child(1) {
+    left: 12vw;
+    width: 38vw;
+  }
+  main #video .videoList ul li:nth-child(2) {
+    right: 12vw;
+  }
+  main #video .videoList ul li:nth-child(2) div h3 {
+    font: bold 15px/1.2 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(2) div span {
+    font: 13px/1 "arial";
+  }
+  main #video .videoList ul li:nth-child(3) {
+    right: 17.5vw;
+  }
+  main #video .videoList ul li:nth-child(3) div h3 {
+    font: bold 15px/1.2 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(3) div span {
+    font: 13px/1 "arial";
+  }
+  main #video .videoList ul li:nth-child(4) {
+    position: absolute;
+    bottom: 8vh;
+    right: 14vw;
+  }
+  main #video .videoList ul li:nth-child(4) div h3 {
+    font: bold 15px/1.2 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(4) div span {
+    font: 13px/1 "arial";
+  }
+}
+@media screen and (max-width: 1197px) {
+  main #video {
+    height: 74vh;
+  }
+  main #video a .plusBtn {
+    top: 3vh;
+    right: 5vw;
+  }
+  main #video .inner {
+    left: 7vw;
+  }
+  main #video .videoList ul li:nth-child(1) {
+    left: 7vw;
+  }
+  main #video .videoList ul li:nth-child(2) {
+    right: 5vw;
+  }
+  main #video .videoList ul li:nth-child(2) div h3 {
+    font: bold 13px/1.2 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(2) div span {
+    font: 13px/1 "arial";
+  }
+  main #video .videoList ul li:nth-child(3) {
+    right: 8vw;
+  }
+  main #video .videoList ul li:nth-child(3) div h3 {
+    font: bold 15px/1.2 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(3) div span {
+    font: 13px/1 "arial";
+  }
+  main #video .videoList ul li:nth-child(4) {
+    position: absolute;
+    bottom: 8vh;
+    right: 4vw;
+  }
+  main #video .videoList ul li:nth-child(4) div h3 {
+    font: bold 15px/1.2 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(4) div span {
+    font: 13px/1 "arial";
+  }
+}
+@media screen and (max-width: 1024px) {
+  main #video {
+    height: 74vh;
+  }
+  main #video a .plusBtn {
+    top: 3vh;
+    right: 5vw;
+  }
+  main #video .inner {
+    left: 7vw;
+  }
+  main #video .inner p {
+    left: 24vw;
+  }
+  main #video .videoList ul li:nth-child(1) {
+    left: 7vw;
+    width: 35vw;
+  }
+  main #video .videoList ul li:nth-child(1) h3 {
+    font: bold 25px/1.4 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(1) span {
+    font: 17px/1 "arial";
+  }
+  main #video .videoList ul li:nth-child(1) a img {
+    width: 36vw;
+  }
+  main #video .videoList ul li:nth-child(2) {
+    right: 5vw;
+  }
+  main #video .videoList ul li:nth-child(2) div h3 {
+    font: bold 13px/1.2 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(2) div span {
+    font: 13px/1 "arial";
+  }
+  main #video .videoList ul li:nth-child(3) {
+    right: 9vw;
+  }
+  main #video .videoList ul li:nth-child(4) {
+    position: absolute;
+    bottom: 8vh;
+    right: 4vw;
+  }
+  main #video .videoList ul li:nth-child(4) div h3 {
+    font: bold 15px/1.2 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(4) div span {
+    font: 13px/1 "arial";
+  }
+}
+@media screen and (max-width: 768px) {
+  main #video {
+    height: 74vh;
+  }
+  main #video a .plusBtn {
+    top: 3vh;
+    right: 5vw;
+  }
+  main #video .inner {
+    left: 7vw;
+  }
+  main #video .inner p {
+    left: 15vw;
+  }
+  main #video .videoList ul li:nth-child(1) {
+    left: 7vw;
+    width: 51vw;
+  }
+  main #video .videoList ul li:nth-child(1) h3 {
+    font: bold 25px/1.4 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(1) span {
+    font: 17px/1 "arial";
+  }
+  main #video .videoList ul li:nth-child(1) a img {
+    width: 51vw;
+  }
+  main #video .videoList ul li:nth-child(2) {
+    right: 20vw;
+  }
+  main #video .videoList ul li:nth-child(2) div h3 {
+    font: bold 13px/1.2 "맑은 고딕";
+    display: none;
+  }
+  main #video .videoList ul li:nth-child(2) div span {
+    font: 13px/1 "arial";
+    display: none;
+  }
+  main #video .videoList ul li:nth-child(3) {
+    right: 20vw;
+  }
+  main #video .videoList ul li:nth-child(3) div h3 {
+    font: bold 13px/1.2 "맑은 고딕";
+    display: none;
+  }
+  main #video .videoList ul li:nth-child(3) div span {
+    font: 13px/1 "arial";
+    display: none;
+  }
+  main #video .videoList ul li:nth-child(4) {
+    bottom: 8vh;
+    right: 20vw;
+  }
+  main #video .videoList ul li:nth-child(4) div h3 {
+    font: bold 13px/1.2 "맑은 고딕";
+    display: none;
+  }
+  main #video .videoList ul li:nth-child(4) div span {
+    font: 13px/1 "arial";
+    display: none;
+  }
+}
+
+.community {
+  margin-top: -30px;
+  position: relative;
+}
+.community .sub_visual {
+  background-image: url(../images/sub_visual.jpg);
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+}
+.community .sub_visual div {
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+}
+.community .sub_visual div h1 {
+  font: bold 30px/1 "맑은 고딕";
+  color: #eeeeff;
+  margin-bottom: 10px;
+}
+.community .sub_visual div span {
+  font: 18px/1 "맑은 고딕";
+  color: #fff;
+}
+.community .inner {
+  margin-top: 30px;
+}
+.community .inner h1 {
+  font: bold 45px/1 "맑은 고딕";
+  color: #555;
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+.community .inner h1 span {
+  font: 20px/1 "맑은 고딕";
+  color: #555;
+}
+.community .inner table {
+  width: 80%;
+  border-bottom: 2px solid #111;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  margin-left: 200px;
+}
+.community .inner table tr:nth-child(even) {
+  background-color: #eee;
+}
+.community .inner table tr:hover {
+  background-color: #a50034;
+  color: #fff;
+}
+.community .inner table tr th {
+  padding: 15px;
+  background-color: #444;
+  color: #fff;
+}
+.community .inner table tr th:nth-of-type(1) {
+  width: 10%;
+}
+.community .inner table tr th:nth-of-type(3) {
+  width: 15%;
+}
+.community .inner table tr th:nth-of-type(4) {
+  width: 15%;
+}
+.community .inner table tr td {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+.community .inner table tr td:hover a {
+  color: #fff;
+}
+.community .inner table tr td:nth-of-type(2) {
+  text-align: left;
+}
+.community .inner table tr td:nth-of-type(3) {
+  font-family: "맑은 고딕";
+}
+.community .inner table tr td a {
+  color: #333;
+  line-height: 1.4;
+}
+.community .inner .pagenation {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.community .inner .pagenation .prev {
+  position: absolute;
+  left: 30%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #555;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.community .inner .pagenation .next {
+  position: absolute;
+  right: 30%;
+  width: 30px;
+  height: 30px;
+  background: #555;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.community .inner .pagenation .number {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+}
+.community .inner .pagenation .number a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #888;
+  font: 11px/30px "arial";
+  color: #666;
+  margin: 0px 10px 30px;
+  transition: 0.5s;
+}
+.community .inner .pagenation .number a:hover {
+  background: #ff87ad;
+  color: #fff;
+}
+
+.youtube {
+  position: relative;
+  margin-top: -30px;
+}
+.youtube .sub_visual {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url(../images/sub_visual.jpg);
+}
+.youtube .sub_visual div {
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+}
+.youtube .sub_visual div h1 {
+  font: bold 40px/1 "arial";
+  color: #fff;
+  margin-bottom: 10px;
+}
+.youtube .sub_visual div span {
+  font: 20px/1 "맑은 고딕";
+  color: #bbb;
+}
+.youtube .inner {
+  margin-top: 30px;
+}
+.youtube .inner h1 {
+  font: bold 45px/1 "맑은 고딕";
+  color: #555;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+.youtube .inner h1 span {
+  font: 20px/1 "맑은 고딕";
+  color: #555;
+}
+.youtube .inner h2 {
+  font: bold 30px/1 "맑은 고딕";
+  padding: 20px;
+  margin-left: 20px;
+}
+.youtube .inner .vidList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.youtube .inner .vidList article {
+  width: 40%;
+  height: 500px;
+  border: 2px solid #a50034;
+  position: relative;
+  padding: 10px;
+}
+.youtube .inner .vidList article .pic {
+  display: block;
+  width: 100%;
+  height: 60%;
+  padding: 10px;
+}
+.youtube .inner .vidList article .pic img {
+  width: 70%;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  left: 17%;
+}
+.youtube .inner .vidList article .con {
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+}
+.youtube .inner .vidList article .con h2 {
+  text-align: center;
+  font: bold 25px/1.2 "맑은 고딕";
+  color: #444;
+}
+.youtube .inner .vidList article .con p {
+  font: 20px/1.2 "맑은 고딕";
+  color: #555;
+  margin-bottom: 10px;
+}
+.youtube .inner .vidList article .con span {
+  font: 18px/1 "arial";
+  color: orangered;
+}
+.youtube .inner .vidList .pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.youtube .inner .vidList .pop .btnClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.youtube .inner .vidList .pop .btnClose:hover {
+  transform: scale(1.5);
+}
+.youtube .pagenation {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 40px;
+}
+.youtube .pagenation .prev {
+  position: absolute;
+  left: 30%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #555;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.youtube .pagenation .next {
+  position: absolute;
+  right: 30%;
+  width: 30px;
+  height: 30px;
+  background: #555;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.youtube .pagenation .number {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+}
+.youtube .pagenation .number a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #888;
+  font: 11px/30px "arial";
+  color: #666;
+  margin: 0px 10px 10px;
+  transition: 0.5s;
+}
+.youtube .pagenation .number a:hover {
+  background: #ff87ad;
+  color: #fff;
+}
+
+.join {
+  position: relative;
+  margin-top: -30px;
+}
+.join .sub_visual {
+  background-image: url(../images/subBanner.jpg);
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.join .sub_visual div {
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+}
+.join .sub_visual div h1 {
+  font: bold 30px/1 "맑은 고딕";
+  margin-bottom: 10px;
+  color: #fff;
+  z-index: 4;
+}
+.join .sub_visual div span {
+  font: 18px/1.3 "맑은 고딕";
+  color: #bbb;
+  z-index: 4;
+}
+.join .inner {
+  margin-top: 30px;
+}
+.join .inner h1 {
+  font: bold 45px/1 "맑은 고딕";
+  color: #555;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+.join .inner h1 span {
+  font: 20px/1 "맑은 고딕";
+  color: #555;
+}
+.join .inner h2 {
+  font: bold 30px/1 "맑은 고딕";
+  padding: 20px;
+  margin-left: 20px;
+}
+.join .inner #terms {
+  width: 95%;
+  margin-left: 40px;
+  height: 200px;
+  resize: none;
+  padding: 20px;
+  font: 12px/1.3 "arial";
+  color: #888;
+  background: #eee;
+  margin-bottom: 20px;
+}
+.join .inner .agreement {
+  margin-bottom: 70px;
+  margin-left: 40px;
+}
+.join .inner .agreement label[for=agree] {
+  font: bold 18px/1 "맑은 고딕";
+  color: red;
+}
+.join .inner table {
+  width: 100%;
+  padding: 30px 0px 30px 0px;
+}
+.join .inner table tr th {
+  width: 20%;
+  padding: 20px 40px;
+  font: bold 16px/1 "arial";
+  color: #666;
+  text-align: left;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  background: #eee;
+}
+.join .inner table tr th:last-child {
+  background-color: #fff;
+  text-align: center;
+  border-right: none;
+}
+.join .inner table tr th input[type=submit],
+.join .inner table tr th input[type=reset] {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background: #444;
+  font: bold 14px/1 "arial";
+  color: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.join .inner table tr td {
+  border-bottom: 1px solid #bbb;
+  padding: 20px 30px;
+}
+.join .inner table tr td input[type=text],
+.join .inner table tr td input[type=password] {
+  width: 30%;
+  height: 30px;
+  border: 1px solid #bbb;
+  background-color: #eeffff;
+  padding-left: 10px;
+}
+.join .inner table tr td input[type=radio] {
+  margin-right: 5px;
+}
+.join .inner table tr td label {
+  margin-right: 30px;
+}
+
+.noticeEvent {
+  margin-top: -30px;
+  position: relative;
+}
+.noticeEvent .sub_visual {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url(../images/subBanner.jpg);
+}
+.noticeEvent .sub_visual div {
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+}
+.noticeEvent .sub_visual div h1 {
+  font: bold 40px/1 "arial";
+  color: #fff;
+  margin-bottom: 10px;
+}
+.noticeEvent .sub_visual div span {
+  font: 20px/1 "맑은 고딕";
+  color: #bbb;
+}
+.noticeEvent .inner {
+  margin-top: 30px;
+  position: relative;
+}
+.noticeEvent .inner h1 {
+  font: bold 45px/1 "맑은 고딕";
+  color: #555;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+.noticeEvent .inner h1 span {
+  font: 20px/1 "맑은 고딕";
+  color: #555;
+  margin-left: 20px;
+}
+.noticeEvent .inner .NGboard {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+.noticeEvent .inner .NGboard .tab {
+  display: flex;
+  width: 500px;
+  height: 60px;
+  margin-left: 255px;
+  cursor: pointer;
+}
+.noticeEvent .inner .NGboard .tab li {
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  border: 2px solid #000;
+  border-bottom: none;
+}
+.noticeEvent .inner .NGboard .tab li.on {
+  background-color: #a50034;
+}
+.noticeEvent .inner .NGboard .tab li.on a {
+  color: #fff;
+}
+.noticeEvent .inner .NGboard .tab li a {
+  font: bold 20px/50px "맑은 고딕";
+  color: #333;
+}
+.noticeEvent .inner .NGboard .content {
+  width: 100%;
+  height: 74vh;
+  position: relative;
+}
+.noticeEvent .inner .NGboard .content div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  z-index: 1;
+}
+.noticeEvent .inner .NGboard .content div.on {
+  opacity: 1;
+  z-index: 2;
+}
+.noticeEvent .inner .NGboard .content #notice table,
+.noticeEvent .inner .NGboard .content #event table {
+  width: 80%;
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  margin-left: 130px;
+}
+.noticeEvent .inner .NGboard .content #notice table tr:nth-child(even),
+.noticeEvent .inner .NGboard .content #event table tr:nth-child(even) {
+  background-color: #eee;
+}
+.noticeEvent .inner .NGboard .content #notice table tr:hover,
+.noticeEvent .inner .NGboard .content #event table tr:hover {
+  background-color: #a50034;
+  color: #fff;
+}
+.noticeEvent .inner .NGboard .content #notice table tr th,
+.noticeEvent .inner .NGboard .content #event table tr th {
+  padding: 15px;
+  background-color: #444;
+  color: #fff;
+}
+.noticeEvent .inner .NGboard .content #notice table tr th:nth-of-type(1),
+.noticeEvent .inner .NGboard .content #event table tr th:nth-of-type(1) {
+  width: 10%;
+}
+.noticeEvent .inner .NGboard .content #notice table tr th:nth-of-type(3),
+.noticeEvent .inner .NGboard .content #event table tr th:nth-of-type(3) {
+  width: 15%;
+}
+.noticeEvent .inner .NGboard .content #notice table tr th:nth-of-type(4),
+.noticeEvent .inner .NGboard .content #event table tr th:nth-of-type(4) {
+  width: 15%;
+}
+.noticeEvent .inner .NGboard .content #notice table tr td,
+.noticeEvent .inner .NGboard .content #event table tr td {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+.noticeEvent .inner .NGboard .content #notice table tr td:hover a,
+.noticeEvent .inner .NGboard .content #event table tr td:hover a {
+  color: #fff;
+}
+.noticeEvent .inner .NGboard .content #notice table tr td:nth-of-type(2),
+.noticeEvent .inner .NGboard .content #event table tr td:nth-of-type(2) {
+  text-align: left;
+}
+.noticeEvent .inner .NGboard .content #notice table tr td:nth-of-type(3),
+.noticeEvent .inner .NGboard .content #event table tr td:nth-of-type(3) {
+  font-family: "맑은 고딕";
+}
+.noticeEvent .inner .NGboard .content #notice table tr td a,
+.noticeEvent .inner .NGboard .content #event table tr td a {
+  color: #333;
+  line-height: 1.4;
+}
+.noticeEvent .pagenation {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 40px;
+}
+.noticeEvent .pagenation .prev {
+  position: absolute;
+  left: 30%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #555;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.noticeEvent .pagenation .next {
+  position: absolute;
+  right: 30%;
+  width: 30px;
+  height: 30px;
+  background: #555;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.noticeEvent .pagenation .number {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+}
+.noticeEvent .pagenation .number a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #888;
+  font: 11px/30px "arial";
+  color: #666;
+  margin: 0px 10px 10px;
+  transition: 0.5s;
+}
+.noticeEvent .pagenation .number a:hover {
+  background: #ff87ad;
+  color: #fff;
+}
+
+.photo {
+  position: relative;
+  margin-top: -30px;
+}
+.photo .sub_visual {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url(../images/sub_visual.jpg);
+}
+.photo .sub_visual div {
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+}
+.photo .sub_visual div h1 {
+  font: bold 40px/1 "arial";
+  color: #fff;
+  margin-bottom: 10px;
+}
+.photo .sub_visual div span {
+  font: 20px/1 "맑은 고딕";
+  color: #bbb;
+}
+.photo .inner {
+  margin-top: 30px;
+  height: 200vh;
+}
+.photo .inner h1 {
+  font: bold 45px/1 "맑은 고딕";
+  color: #555;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+.photo .inner h1 span {
+  font: 20px/1 "맑은 고딕";
+  color: #555;
+}
+.photo .inner ul {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo .inner ul li {
+  width: 100px;
+  height: 26px;
+  margin-left: 20px;
+}
+.photo .inner ul li.on a {
+  background: linear-gradient(45deg, #333, #a50034);
+  color: #fff;
+}
+.photo .inner ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font: bold 17px/26px "Crimson";
+  color: #aaa;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+.photo .inner section {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.photo .inner section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.photo .inner section article {
+  width: 20%;
+  padding: 12px;
+  float: left;
+}
+.photo .inner section article div {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  border-radius: 4px;
+}
+.photo .inner section article div img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.photo .inner section article div h2 {
+  font: bold 25px/1.4 "맑은 고딕";
+  margin-bottom: 10px;
+  color: #444;
+  letter-spacing: 1px;
+}
+.photo .inner section article div p {
+  font: 18px/1 "맑은 고딕";
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.location {
+  margin-top: -30px;
+  position: relative;
+}
+.location .sub_visual {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url(../images/jamsilbanner.jpg);
+  position: relative;
+}
+.location .sub_visual div {
+  position: absolute;
+  bottom: 40px;
+  left: 200px;
+}
+.location .sub_visual div h1 {
+  font: bold 40px/1 "맑은 고딕";
+  margin-bottom: 10px;
+  color: #333;
+  z-index: 4;
+}
+.location .sub_visual div span {
+  font: 25px/1.3 "맑은 고딕";
+  color: #555;
+  z-index: 4;
+}
+.location .inner {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.location .inner h1 {
+  font: bold 45px/1 "맑은 고딕";
+  color: #555;
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+.location .inner h1 span {
+  font: 20px/1 "맑은 고딕";
+  color: #555;
+}
+.location .inner p {
+  width: 90%;
+  height: 100%;
+  margin-left: 100px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 20px;
+  box-shadow: 10px 10px 3px 0 rgba(0, 0, 0, 0.2);
+  font: 16px/1.5 "SeoulHangangM";
+}
+.location .inner .sisul {
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.location .inner .sisul span h2 {
+  margin-left: 100px;
+  padding: 25px;
+  font: bold 26px/1 "SeoulHangangM";
+  letter-spacing: 2px;
+}
+.location .inner .sisul span p {
+  width: 700px;
+}
+.location .inner .salpyer {
+  position: absolute;
+  top: 285px;
+  right: 30%;
+}
+.location .inner .salpyer h1 {
+  margin-bottom: 50px;
+}
+.location .inner .salpyer div {
+  width: 280px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  margin-top: 70px;
+  padding: 5px;
+}
+.location .inner .salpyer div h2 {
+  margin-left: 40px;
+  width: 190px;
+  height: 50px;
+  padding: 25px;
+  font: bold 22px/1 "SeoulHangangM";
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.location .inner .salpyer div p {
+  height: 90px;
+}
+.location .inner .baro {
+  position: absolute;
+  right: 440px;
+  bottom: 43%;
+}
+.location .inner .baro span {
+  margin-left: 100px;
+  color: red;
+  font: 17px/1 "SeoulHangangM";
+}
+.location .inner .kakaoMap {
+  width: 100%;
+}
+.location .inner .kakaoMap .inner {
+  margin-top: 50px;
+}
+.location .inner .kakaoMap #map {
+  width: 100%;
+  height: 500px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+}
+.location .inner .kakaoMap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.location .inner .kakaoMap .traffic {
+  float: left;
+  margin-left: 100px;
+}
+.location .inner .kakaoMap .traffic li {
+  float: left;
+  margin-right: 20px;
+}
+.location .inner .kakaoMap .traffic li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  font: bold 12px/40px "맑은 고딕";
+  color: #333;
+  text-align: center;
+  border: 1px solid #555;
+}
+.location .inner .kakaoMap .traffic li.on a {
+  background-color: orange;
+  color: #333;
+}
+
+.cheersong {
+  margin-top: -30px;
+  position: relative;
+}
+.cheersong .sub_visual {
+  background-image: url(../images/cheervisual.jpg);
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+}
+.cheersong .sub_visual div {
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+}
+.cheersong .sub_visual div h1 {
+  font: bold 35px/1 "맑은 고딕";
+  color: #eeeeff;
+  margin-bottom: 10px;
+}
+.cheersong .sub_visual div span {
+  font: 18px/1 "맑은 고딕";
+  color: #fff;
+}
+.cheersong .inner {
+  margin-top: 30px;
+  width: 100%;
+  height: 100vh;
+}
+.cheersong .inner h1 {
+  font: bold 45px/1 "맑은 고딕";
+  color: #555;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+.cheersong .inner h1 span {
+  font: 20px/1 "맑은 고딕";
+  color: #555;
+}
+.cheersong .inner .song h2 {
+  width: 100%;
+  text-align: center;
+  font: bold 35px/1 "맑은 고딕";
+  margin-bottom: 100px;
+}
+.cheersong .inner .song p {
+  margin-left: 27%;
+  font-size: 20px;
+  width: 440px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px dotted #555;
+  text-align: center;
+}
+.cheersong .inner .cheerVideo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.cheersong .inner .cheerVideo .speech-bubble {
+  position: relative;
+  background: #a50034;
+  border-radius: 20px;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  bottom: 250px;
+  right: 23%;
+}
+.cheersong .inner .cheerVideo .speech-bubble span {
+  font: 25px/1.7 "SeoulHangangM";
+  position: absolute;
+  top: 60px;
+  color: #fff;
+  padding: 20px;
+}
+.cheersong .inner .cheerVideo .speech-bubble:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 65px solid transparent;
+  border-right-color: #a50034;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -32.5px;
+  margin-left: -65px;
+}
+
+.coach {
+  margin-top: 30px;
+  height: 118vh;
+  overflow: hidden;
+}
+.coach .inner {
+  margin-left: 100px;
+}
+.coach .inner h1 {
+  font: bold 40px/1 "맑은 고딕";
+}
+.coach .inner h1 span {
+  font: 20px/1 "맑은 고딕";
+}
+.coach ul {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coach ul li {
+  width: 100px;
+  height: 35px;
+  margin-left: 20px;
+}
+.coach ul li.on a {
+  background: linear-gradient(45deg, #333, #a50034);
+  color: #fff;
+}
+.coach ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font: bold 17px/35px "Crimson";
+  color: #aaa;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+.coach section {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.coach section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.coach section article {
+  width: 20%;
+  padding: 12px;
+  float: left;
+}
+.coach section article.one {
+  overflow: hidden;
+}
+.coach section article div {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+.coach section article div img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.coach section article div h2 {
+  font: bold 25px/1.4 "맑은 고딕";
+  margin-bottom: 10px;
+  color: #444;
+  letter-spacing: 1px;
+}
+.coach section article div p {
+  font: 18px/1.3 "맑은 고딕";
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.intro {
+  margin-top: -30px;
+  position: relative;
+}
+.intro .sub_visual {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url(../images/subBanner.jpg);
+}
+.intro .sub_visual div {
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+}
+.intro .sub_visual div h1 {
+  font: bold 40px/1 "arial";
+  color: #fff;
+  margin-bottom: 10px;
+}
+.intro .sub_visual div span {
+  font: 20px/1 "맑은 고딕";
+  color: #bbb;
+}
+.intro .inner {
+  margin-top: 30px;
+  position: relative;
+  width: 100vw;
+  height: 215vh;
+}
+.intro .inner h1 {
+  font: bold 45px/1 "맑은 고딕";
+  color: #555;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+.intro .inner h1 span {
+  font: 20px/1 "맑은 고딕";
+  color: #555;
+  margin-left: 20px;
+}
+.intro .inner .pic {
+  width: 100vw;
+  height: 215vh;
+  position: relative;
+  margin-top: 50px;
+}
+.intro .inner .pic li {
+  width: 100%;
+  height: 500px;
+}
+.intro .inner .pic li img {
+  width: 100%;
+  height: 100%;
+}
+
+.popupBg {
+  display: none;
+  width: 100%;
+  height: 347%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  position: absolute;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 500px;
+  min-height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  border: 2px solid #333;
+}
+.popup h1 {
+  font: bold 30px/1 "SeoulHangangM";
+  margin-bottom: 30px;
+  text-align: center;
+}
+.popup p {
+  font: 20px/1.3 "SeoulHangangM";
+  margin-bottom: 10px;
+}
+.popup img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.popup #close {
+  float: right;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #ec3f76;
+  font: bold 16px/1 "SeoulHangangM";
+  color: #eee;
+  border-radius: 20px;
+}
+
+.news {
+  margin-top: -30px;
+  position: relative;
+}
+.news .sub_visual {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url(../images/subBanner.jpg);
+}
+.news .sub_visual div {
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+}
+.news .sub_visual div h1 {
+  font: bold 40px/1 "arial";
+  color: #fff;
+  margin-bottom: 10px;
+}
+.news .sub_visual div span {
+  font: 20px/1 "맑은 고딕";
+  color: #bbb;
+}
+.news .inner {
+  margin-top: 30px;
+}
+.news .inner h1 {
+  font: bold 45px/1 "맑은 고딕";
+  color: #555;
+  margin-bottom: 30px;
+  margin-left: 150px;
+}
+.news .inner h1 span {
+  font: 20px/1 "맑은 고딕";
+  color: #555;
+}
+.news .inner .wrap {
+  margin: 70px auto;
+  border: 2px solid #000;
+  width: 85%;
+  padding: 30px;
+}
+.news .inner .wrap .con li {
+  display: flex;
+  padding: 30px;
+}
+.news .inner .wrap .con li a {
+  width: 300px;
+  height: 200px;
+}
+.news .inner .wrap .con li a img {
+  width: 100%;
+  height: 100%;
+}
+.news .inner .wrap .con li div {
+  margin: 55px 60px auto;
+}
+.news .inner .wrap .con li div h2 {
+  font: bold 35px/1.3 "맑은 고딕";
+  cursor: pointer;
+}
+.news .inner .wrap .con li div span {
+  font: 20px/1.5 "맑은 고딕";
+}
+.news .inner .pagenation {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 40px;
+}
+.news .inner .pagenation .prev {
+  position: absolute;
+  left: 30%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #555;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.news .inner .pagenation .next {
+  position: absolute;
+  right: 30%;
+  width: 30px;
+  height: 30px;
+  background: #555;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+}
+.news .inner .pagenation .number {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+}
+.news .inner .pagenation .number a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #888;
+  font: 11px/30px "arial";
+  color: #666;
+  margin: 0px 10px 10px;
+  transition: 0.5s;
+}
+.news .inner .pagenation .number a:hover {
+  background: #ff87ad;
+  color: #fff;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

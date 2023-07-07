@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홈구장</title>
+    <script defer src="script/location.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <script src="script/jquery-3.6.4.js"></script>
+    <script defer src="script/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4e853cc1da473b559a41c2d81771a197"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/LG logo.png" alt="lg트윈스 메인로고" />
+          </a>
+        </h1>
+        <!-- <ul class="until">
+          <li><a href="#">로그인</a></li>
+          <li><a href="join.html">회원가입</a></li>
+          <li><a href="#">TWINS POINT</a></li>
+        </ul> -->
+        <nav class="gnbWrap">
+          <div class="Bggnb"></div>
+          <ul id="gnb">
+            <li>
+              <a href="#">트윈스</a>
+              <ul class="sub">
+                <li><a href="introduce.html">구단소개</a></li>
+                <li><a href="twinsNews.html">트윈스뉴스</a></li>
+                <li><a href="mainnotice.html">공지&이벤트</a></li>
+                <li><a href="homefield.html">홈구장</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">팀</a>
+              <ul class="sub">
+                <li><a href="coach.html">코칭스태프</a></li>
+                <li><a href="player.html">선수단(준비중)</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">팬</a>
+              <ul class="sub">
+                <li><a href="community.html">자유게시판</a></li>
+                <li><a href="youtube.html">트윈스비디오</a></li>
+                <li><a href="photo.html">트윈스포토</a></li>
+                <li><a href="cheersong.html">응원가</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="https://www.ticketlink.co.kr/sports/baseball/59#reservation" target="_blink">티켓예매</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="content location">
+      <div class="sub_visual">
+        <div>
+          <h1>잠실야구장</h1>
+          <span>LG TWINS HOME FIELD</span>
+        </div>
+      </div>
+
+      <div class="inner">
+        <h1>JAMSIL STADIUM <span>잠실야구장</span></h1>
+        <p>
+          서울 송파구 올림픽로 25에 위치한 서울종합운동장 야구장(蠶室綜合運動場
+          野球場, Seoul Sports Complex Baseball Park)은 지하철 2호선,
+          9호선(종합운동장역)이 통과하고 있는 강남의 교통요지로서 야구장 남쪽길
+          건너편에 아시아 선수촌 아파트와 공원이 그리고 동쪽으로는 잠실 아파트
+          대단지와 북쪽으로 한강과 탄천을 인접하고 있으며, 동남쪽 3.5㎞지점에는
+          올림픽 공원이 자리잡고 있습니다.
+          <br />
+          <br />
+          경기장의 건설은 1980년부터 착공하여 1982년 7월까지 준공 완료 되었으며,
+          1988년 제24회 서울올림픽의 야구경기가 개최 되기도 한 우리나라의
+          대표적인 야구장이자 한국프로야구의 메카로서 그 역사와 전통을 자랑하고
+          있는 서울의 명소이기도 합니다.
+        </p>
+
+        <div class="sisul">
+          <h1>시설안내</h1>
+          <span>
+            <h2>LG트윈스 외부매장</h2>
+            <p>
+              외야 외부 전광판 하단 부분에 위치, LG트윈스 의류, 야구용품,
+              잡화류, 기념품 등 판매 <br />
+              주중 경기일 기준 경기시작 1시간 30분 전 ~ 경기종료 30분 후까지
+              운영 <br />
+              주말 경기일 기준 경기시작 2시간 전 ~ 경기종료 30분 후까지 운영
+              <br />
+              비경기일 기준 오후 3시 ~ 오후 8시 (단, 월요일 휴무) <br />
+            </p>
+          </span>
+          <span>
+            <h2>트윈스 존(TWINS ZONE)</h2>
+            <p>
+              2001년에 신설된 LG트윈스 팬들만을 위한 장소 <br />
+              입장권 예매, 회원관련 문의, 팬서비스 코너 등 제공 <br />
+            </p>
+          </span>
+          <span>
+            <h2>다양한 먹거리</h2>
+            <p>
+              GS25, 맘스터치, BHC, 한식, 분식, 스낵 등 깨끗한 환경과 코너별
+              특성화된 메뉴 제공 <br />
+            </p>
+          </span>
+        </div>
+
+        <div class="salpyer">
+          <h1>잠실야구장 살펴보기</h1>
+          <div>
+            <span>
+              <h2>개장</h2>
+              <p>
+                1982. 7. 15 <br />
+                기공 : 1980. 4. 17
+              </p>
+            </span>
+            <span>
+              <h2>면적</h2>
+              <p>26,331㎡ <br />(7,965평)</p>
+            </span>
+            <span>
+              <h2>연면적</h2>
+              <p>45,312㎡ <br />(지하1층~지상3층)</p>
+            </span>
+            <span>
+              <h2>수용인원</h2>
+              <p>23,750명</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <h2>그라운드면적</h2>
+              <p>
+                13,200㎡ <br />
+                (4,000평)
+              </p>
+            </span>
+            <span>
+              <h2>홈런거리</h2>
+              <p>
+                중 : 125m <br />
+                좌우 : 100m
+              </p>
+            </span>
+            <span>
+              <h2>주전광판</h2>
+              <p>30m(가로) X 11.3m(세로)</p>
+            </span>
+            <span>
+              <h2>주차장</h2>
+              <p>소형차 2,000대 <br />수용 규모</p>
+            </span>
+          </div>
+        </div>
+
+        <div class="baro">
+          <a href="https://www.youtube.com/watch?v=4IRdjUs6Jb4">
+            <h1>잠실야구장 바로알기</h1>
+          </a>
+          <span
+            >"잠실야구장 바로알기" 상단 제목을 클릭하시면 유튜브영상페이지로
+            이동합니다!</span
+          >
+        </div>
+
+        <div class="kakaoMap">
+          <div class="inner">
+            <h1>LOCATION <span>찾아오시는길</span></h1>
+
+            <div id="map"></div>
+            <ul class="traffic">
+              <li><a href="#">교통정보보기</a></li>
+              <li class="on"><a href="#">교통정보끄기</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="inner">
+        <ul class="footerSns">
+          <li><img src="images/sns2.png" alt="풋터 sns탭" /></li>
+        </ul>
+        <div class="footerText">
+          <p>
+            (주)엘지스포츠 사업자등록번호 : 120-81-57558 통신판매업신고번호 :
+            2016-서울송파-0646 <br />
+            서울특별시 송파구 올림픽로 25(잠실동, 종합운동장내) 대표이사 :
+            김인석
+          </p>
+          <span>©LG Sports.LTD</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

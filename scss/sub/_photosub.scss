@@ -1,0 +1,115 @@
+.photo {
+  position: relative;
+  margin-top: -30px;
+  .sub_visual {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-image: url(../images/sub_visual.jpg);
+
+    div {
+      position: absolute;
+      bottom: 40px;
+      left: 150px;
+
+      h1 {
+        font: bold 40px/1 "arial";
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      span {
+        font: 20px/1 "맑은 고딕";
+        color: #bbb;
+      }
+    }
+  }
+  .inner {
+    margin-top: 30px;
+    height: 200vh;
+    h1 {
+      font: bold 45px/1 "맑은 고딕";
+      color: #555;
+      margin-bottom: 30px;
+      margin-left: 100px;
+
+      span {
+        font: 20px/1 "맑은 고딕";
+        color: #555;
+      }
+    }
+    // isotope 레이아웃
+    ul {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        width: 100px;
+        height: 26px;
+        margin-left: 20px;
+
+        &.on {
+          a {
+            background: linear-gradient(45deg, #333, #a50034);
+            color: #fff;
+          }
+        }
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          font: bold 17px/26px "Crimson";
+          color: #aaa;
+          letter-spacing: 1px;
+          text-align: center;
+          background-color: #fff;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          border-radius: 4px;
+        }
+      }
+    }
+
+    section {
+      width: 100%;
+      height: 100%;
+      float: left;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      article {
+        width: 20%;
+        padding: 12px;
+        float: left;
+
+        div {
+          width: 100%;
+          background-color: #fff;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+          padding: 14px;
+          border-radius: 4px;
+
+          img {
+            width: 100%;
+            margin-bottom: 15px;
+          }
+          h2 {
+            font: bold 25px/1.4 "맑은 고딕";
+            margin-bottom: 10px;
+            color: #444;
+            letter-spacing: 1px;
+          }
+          p {
+            font: 18px/1 "맑은 고딕";
+            color: #777;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

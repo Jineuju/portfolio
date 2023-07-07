@@ -1,0 +1,174 @@
+#News {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  background-color: #fff;
+
+  .inner {
+    width: 650px;
+    height: 100%;
+    position: relative;
+
+    .font {
+      position: absolute;
+      top: 30%;
+      right: 1vw;
+      transform: translate(-50%, -50%);
+
+      strong {
+        font: bold 45px/1 "arial";
+        color: #a50034;
+      }
+
+      .btn {
+        width: 120px;
+        height: 50px;
+        cursor: pointer;
+        position: relative;
+        display: block;
+
+        span {
+          font: 25px/50px "맑은 고딕";
+          color: #222;
+          transition: 0.5s;
+          display: block;
+          margin-top: 10px;
+          width: 100%;
+          height: 100%;
+
+          &:hover {
+            &::before {
+              width: 100%;
+              transition: 0.2s;
+            }
+          }
+          &:hover {
+            &::after {
+              width: 40px;
+              transition: 0.2s 0.2s;
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            width: 0%;
+            height: 3px;
+            background-color: #a50034;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: 0px;
+            width: 0px;
+            height: 3px;
+            background-color: #a50034;
+            transform-origin: right center;
+            transform: rotate(45deg);
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .wrap {
+    padding-top: 70px;
+    position: relative;
+
+    article {
+      display: flex;
+      height: 23vh;
+      margin-right: 2vw;
+
+
+
+      .pic {
+        width: 105px;
+        height: 70px;
+        margin-right: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+
+      .content {
+        li {
+          padding-top: 10px;
+          margin-bottom: 5px;
+
+          a {
+            font: bold 22px/1 "맑은 고딕";
+            color: #000;
+          }
+
+          span {
+            font: 16px/1 "맑은 고딕";
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1440px) {
+  #News {
+  
+    .inner {
+      width: 23vw;
+    }
+  }
+}
+@media screen and (max-width:1197px) {
+  #News {
+  
+    .inner {
+      width: 30vw;
+      height: 100%;
+    }
+  
+    .wrap {
+      padding-top: 70px;
+      position: relative;
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  #News {
+  
+    .inner {
+      width: 40vw;
+    }
+  }
+}
+@media screen and (max-width:768px) {
+  #News {
+  
+    .inner {
+      width: 61vw;
+    }
+    .wrap {
+  
+      article {
+
+  
+        .content {
+          li {
+            padding-top: 10px;
+            margin-bottom: 5px;
+  
+            a {
+              font: bold 20px/1 "맑은 고딕";
+              color: #000;
+            }
+  
+            span {
+              font: 12px/1 "맑은 고딕";
+            }
+          }
+        }
+      }
+    }
+  }
+}

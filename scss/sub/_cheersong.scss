@@ -1,0 +1,103 @@
+.cheersong {
+  margin-top: -30px;
+  position: relative;
+
+  .sub_visual {
+    background-image: url(../images/cheervisual.jpg);
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+
+    div {
+      position: absolute;
+      bottom: 40px;
+      left: 150px;
+
+      h1 {
+        font: bold 35px/1 "맑은 고딕";
+        color: #eeeeff;
+        margin-bottom: 10px;
+      }
+      span {
+        font: 18px/1 "맑은 고딕";
+        color: #fff;
+      }
+    }
+  }
+  .inner {
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+    h1 {
+      font: bold 45px/1 "맑은 고딕";
+      color: #555;
+      margin-bottom: 100px;
+      margin-left: 100px;
+
+      span {
+        font: 20px/1 "맑은 고딕";
+        color: #555;
+      }
+    }
+    .song {
+      h2 {
+        width: 100%;
+        text-align: center;
+        font: bold 35px/1 "맑은 고딕";
+        margin-bottom: 100px;
+      }
+      p {
+        margin-left: 27%;
+        font-size: 20px;
+        width: 440px;
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px dotted #555;
+        text-align: center;
+      }
+    }
+    .cheerVideo {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+
+      .speech-bubble {
+        position: relative;
+        background: #a50034;
+        border-radius: 20px;
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        bottom: 250px;
+        right: 23%;
+
+        span {
+          font: 25px/1.7 "SeoulHangangM";
+          position: absolute;
+          top: 60px;
+          color: #fff;
+          padding: 20px;
+        }
+      }
+
+      .speech-bubble:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 65px solid transparent;
+        border-right-color: #a50034;
+        border-left: 0;
+        border-bottom: 0;
+        margin-top: -32.5px;
+        margin-left: -65px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+main{
+    width: 100%;
+    margin-top: -30px;
+    background-color: #fff;
+
+    @import "./banner";
+    @import "./contentBox";
+    @import "./news";
+    @import "./photo";
+    @import "./slide";
+    @import "./youtubeM";
+}

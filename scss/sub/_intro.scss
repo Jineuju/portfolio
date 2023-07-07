@@ -1,0 +1,59 @@
+.intro {
+  margin-top: -30px;
+  position: relative;
+  .sub_visual {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-image: url(../images/subBanner.jpg);
+
+    div {
+      position: absolute;
+      bottom: 40px;
+      left: 150px;
+
+      h1 {
+        font: bold 40px/1 "arial";
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      span {
+        font: 20px/1 "맑은 고딕";
+        color: #bbb;
+      }
+    }
+  }
+  .inner {
+    margin-top: 30px;
+    position: relative;
+    width: 100vw;
+    height: 215vh;
+    h1 {
+      font: bold 45px/1 "맑은 고딕";
+      color: #555;
+      margin-bottom: 30px;
+      margin-left: 100px;
+
+      span {
+        font: 20px/1 "맑은 고딕";
+        color: #555;
+        margin-left: 20px;
+      }
+    }
+    .pic {
+      width: 100vw;
+      height: 215vh;
+      position: relative;
+      margin-top: 50px;
+
+      li {
+        width: 100%;
+        height: 500px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
