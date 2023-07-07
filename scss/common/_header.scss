@@ -22,34 +22,6 @@ header {
       }
     }
 
-    // 상단 메뉴
-    // .until {
-    //   float: right;
-    //   padding-top: 20px;
-    //   margin-right: 100px;
-    //   z-index: 11;
-    //   // position: absolute;
-    //   // top: 20px;
-    //   // right: 40px;
-    //   &::after {
-    //     content: "";
-    //     display: block;
-    //     clear: both;
-    //   }
-    //   li {
-    //     float: left;
-    //     // cursor: pointer;
-
-    //     a {
-    //       font: 14px/1 "맑은 고딕";
-    //       color: #999;
-    //       padding: 10px 30px;
-    //       letter-spacing: 1px;
-    //       display: block;
-    //     }
-    //   }
-    // }
-
     // gnb
     .gnbWrap {
       width: 100%;
@@ -133,6 +105,121 @@ header {
         }
       }
     }
+    .btnCall{
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      width: 40px;
+      height: 40px;
+      // border: 1px solid #fff;
+      display: none;
+
+      &::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: top 0.5s 0s, transform 0.5s 0.5s;
+      }
+
+      &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+      }
+
+      span{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        text-indent: -9999px;
+        transition: 0.5s;
+      }
+
+      &.on{
+        &::before{
+          top: 50%;
+          margin-top: -1px;
+          transform: rotate(45deg);
+        }
+
+        &::after{
+          bottom: 50%;
+          margin-bottom: -1px;
+          transform: rotate(-45deg);
+        }
+
+        span{
+          transform: translate(100%);
+          opacity: 0;
+        }
+      }
+    }
+
+    .menuMo{
+      width: 270px;
+      height: 100vh;
+      background-color: #a50034;
+      position: fixed;
+      top: 0;
+      left: -270px;
+      // left: 0;
+      z-index: 50;
+      padding: 35px 30px;
+      transition: all 0.5s;
+      display: none;
+
+      &.on{
+        left: 0;
+      }
+      .gnbMo{
+        border-top: 1px solid #ccc;
+        padding-top: 30px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 30px;
+        li{
+          a{
+            font: bold 30px/1 "arial";
+            color: #fff;
+            text-align: center;
+            display: block;
+            margin-bottom: 20px;
+          }
+          .sub{
+            li{
+              a{
+                font: 18px/1 "arial";
+                color: #ddd;
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+              }
+              &:hover{
+                a{
+                  background-color: #bbb;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 1440px) {
@@ -143,14 +230,6 @@ header {
         left: 10%;
       }
 
-      // 상단 메뉴
-      .until {
-        li {
-          a {
-            padding: 10px 20px;
-          }
-        }
-      }
 
       // gnb
       .gnbWrap {
@@ -266,6 +345,53 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  header {
+    .inner {
+      // 로고
+      .logo {
+        left: 3%;
+      }
+
+      // 상단 메뉴
+      .until {
+        li {
+          a {
+            padding: 10px 20px;
+          }
+        }
+      }
+
+      // gnb
+      .gnbWrap {
+        #gnb {
+          left: 25%;
+          margin-left: 60px;
+          z-index: 10;
+          width: 65%;
+          display: none;
+          li {
+            width: 20vw;
+
+            .sub {
+              li {
+                a {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .btnCall{
+        display: block;
+      }
+      .menuMo{
+        display: block;
       }
     }
   }

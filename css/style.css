@@ -88,13 +88,105 @@ header .inner .gnbWrap #gnb li .sub li a:hover {
   background-color: #e9e9e9;
   color: #111;
 }
+header .inner .btnCall {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+header .inner .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+header .inner .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+header .inner .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  text-indent: -9999px;
+  transition: 0.5s;
+}
+header .inner .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+header .inner .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+header .inner .btnCall.on span {
+  transform: translate(100%);
+  opacity: 0;
+}
+header .inner .menuMo {
+  width: 270px;
+  height: 100vh;
+  background-color: #a50034;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  z-index: 50;
+  padding: 35px 30px;
+  transition: all 0.5s;
+  display: none;
+}
+header .inner .menuMo.on {
+  left: 0;
+}
+header .inner .menuMo .gnbMo {
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+header .inner .menuMo .gnbMo li a {
+  font: bold 30px/1 "arial";
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+header .inner .menuMo .gnbMo li .sub li a {
+  font: 18px/1 "arial";
+  color: #ddd;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+header .inner .menuMo .gnbMo li .sub li:hover a {
+  background-color: #bbb;
+  width: 100%;
+  height: 100%;
+}
 
 @media screen and (max-width: 1440px) {
   header .inner .logo {
     left: 10%;
-  }
-  header .inner .until li a {
-    padding: 10px 20px;
   }
   header .inner .gnbWrap #gnb {
     left: 25%;
@@ -152,6 +244,33 @@ header .inner .gnbWrap #gnb li .sub li a:hover {
   }
   header .inner .gnbWrap #gnb li .sub li a {
     width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  header .inner .logo {
+    left: 3%;
+  }
+  header .inner .until li a {
+    padding: 10px 20px;
+  }
+  header .inner .gnbWrap #gnb {
+    left: 25%;
+    margin-left: 60px;
+    z-index: 10;
+    width: 65%;
+    display: none;
+  }
+  header .inner .gnbWrap #gnb li {
+    width: 20vw;
+  }
+  header .inner .gnbWrap #gnb li .sub li a {
+    width: 100%;
+  }
+  header .inner .btnCall {
+    display: block;
+  }
+  header .inner .menuMo {
+    display: block;
   }
 }
 footer {
@@ -217,6 +336,22 @@ footer .inner .footerText span {
   }
   footer .inner .footerText span {
     font: bold 20px/1 "맑은 고딕";
+  }
+}
+@media screen and (max-width: 360px) {
+  footer .inner {
+    top: 60px;
+    left: 0;
+  }
+  footer .inner .footerSns li img {
+    width: 250px;
+  }
+  footer .inner .footerText p {
+    font: 14px/1.3 "맑은 고딕";
+    padding: 10px 20px;
+  }
+  footer .inner .footerText span {
+    font: bold 22px/1 "맑은 고딕";
   }
 }
 @font-face {
