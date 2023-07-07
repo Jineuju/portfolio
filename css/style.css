@@ -1674,6 +1674,7 @@ main #photo .wrap ul {
   top: 30%;
   width: 150%;
   overflow: hidden;
+  justify-content: center;
 }
 main #photo .wrap ul li {
   width: 16.6666666667%;
@@ -1856,15 +1857,15 @@ main #photo #more:hover {
   main #photo .wrap {
     width: 100%;
   }
-  main #photo .wrap ul {
+  main #photo .wrap .panel {
     width: 150%;
     overflow: hidden;
   }
-  main #photo .wrap ul li {
+  main #photo .wrap .panel li {
     margin-left: 10vw;
     margin-right: 7vw;
   }
-  main #photo .wrap ul li img {
+  main #photo .wrap .panel li img {
     width: 36vw;
   }
   main #photo .btn {
