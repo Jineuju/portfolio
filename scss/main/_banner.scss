@@ -616,40 +616,14 @@
 
 @media screen and (max-width: 425px) {
   .banners {
-    #banner1 {
-      width: 0%;
-      .baro {
-        .lucky {
-          left: 13vw;
-          display: none;
-        }
-
-        .star {
-          left: 19vw;
-          display: none;
-        }
-
-        span {
-          left: 6vw;
-          display: none;
-        }
-
-        a {
-          left: 5.5vw;
-          display: none;
-        }
-      }
-    }
     // 오른쪽배너
     #banner2 {
       width: 100%;
 
       .baro2 {
-
         li {
-
           h3 {
-            font: bold 23px/6vh "맑은 고딕";
+            font: bold 23px/7vh "맑은 고딕";
             color: #fff;
           }
           p {
@@ -659,14 +633,15 @@
             // transform: translateX(-50px);
             width: 100%;
             // background-color: #000;
-            font: 20px/8vh "맑은 고딕";
+            font: 17px/11vh "맑은 고딕";
             color: #fff;
 
             span {
-              font: bold 37px/8vh "맑은 고딕";
+              font: bold 30px/8vh "맑은 고딕";
               margin: 0 20px;
 
               .span1 {
+                font: bold 35px/8vh "맑은 고딕";
                 color: #f3306e;
 
                 margin: 0px;
@@ -679,7 +654,7 @@
       .navi {
         display: flex;
         position: absolute;
-        top: 6vh;
+        top: 2vh;
         left: 5vw;
 
         .prev {
@@ -695,7 +670,7 @@
         }
         .next {
           position: absolute;
-          left: 73vw;
+          left: 57vw;
 
           &::before,
           &::after {

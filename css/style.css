@@ -145,7 +145,7 @@ header .inner .btnCall.on span {
 }
 header .inner .menuMo {
   width: 270px;
-  height: 100vh;
+  height: 100%;
   background-color: #a50034;
   position: fixed;
   top: 0;
@@ -860,30 +860,11 @@ main .banners #banner2 .navi .next span {
   }
 }
 @media screen and (max-width: 425px) {
-  main .banners #banner1 {
-    width: 0%;
-  }
-  main .banners #banner1 .baro .lucky {
-    left: 13vw;
-    display: none;
-  }
-  main .banners #banner1 .baro .star {
-    left: 19vw;
-    display: none;
-  }
-  main .banners #banner1 .baro span {
-    left: 6vw;
-    display: none;
-  }
-  main .banners #banner1 .baro a {
-    left: 5.5vw;
-    display: none;
-  }
   main .banners #banner2 {
     width: 100%;
   }
   main .banners #banner2 .baro2 li h3 {
-    font: bold 23px/6vh "맑은 고딕";
+    font: bold 23px/7vh "맑은 고딕";
     color: #fff;
   }
   main .banners #banner2 .baro2 li p {
@@ -891,21 +872,22 @@ main .banners #banner2 .navi .next span {
     justify-content: center;
     align-items: center;
     width: 100%;
-    font: 20px/8vh "맑은 고딕";
+    font: 17px/11vh "맑은 고딕";
     color: #fff;
   }
   main .banners #banner2 .baro2 li p span {
-    font: bold 37px/8vh "맑은 고딕";
+    font: bold 30px/8vh "맑은 고딕";
     margin: 0 20px;
   }
   main .banners #banner2 .baro2 li p span .span1 {
+    font: bold 35px/8vh "맑은 고딕";
     color: #f3306e;
     margin: 0px;
   }
   main .banners #banner2 .navi {
     display: flex;
     position: absolute;
-    top: 6vh;
+    top: 2vh;
     left: 5vw;
   }
   main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after {
@@ -917,7 +899,7 @@ main .banners #banner2 .navi .next span {
   }
   main .banners #banner2 .navi .next {
     position: absolute;
-    left: 73vw;
+    left: 57vw;
   }
   main .banners #banner2 .navi .next::before, main .banners #banner2 .navi .next::after {
     right: 25px;
@@ -1509,6 +1491,27 @@ main #News .wrap article .content li span {
     color: #000;
   }
   main #News .wrap article .content li span {
+    font: 12px/1 "맑은 고딕";
+  }
+}
+@media screen and (max-width: 425px) {
+  main #News .inner {
+    width: 80vw;
+    left: 9vw;
+    position: relative;
+  }
+  main #News .wrap:nth-child(2) {
+    display: none;
+  }
+  main #News article .content li {
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+  main #News article .content li a {
+    font: bold 18px/1 "맑은 고딕";
+    color: #000;
+  }
+  main #News article .content li span {
     font: 12px/1 "맑은 고딕";
   }
 }

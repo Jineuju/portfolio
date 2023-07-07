@@ -172,3 +172,37 @@
     }
   }
 }
+
+@media screen and (max-width:425px) {
+  #News {
+  
+    .inner {
+      width: 80vw;
+      left: 9vw;
+      position: relative;
+    }
+    .wrap{
+      &:nth-child(2){
+        display: none;
+      }
+    }
+      article {
+  
+        .content {
+          li {
+            padding-top: 10px;
+            margin-bottom: 5px;
+  
+            a {
+              font: bold 18px/1 "맑은 고딕";
+              color: #000;
+            }
+  
+            span {
+              font: 12px/1 "맑은 고딕";
+            }
+          }
+        }
+      }
+    }
+  }
