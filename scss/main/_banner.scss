@@ -613,3 +613,142 @@
     }
   }
 }
+
+@media screen and (max-width: 425px) {
+  .banners {
+    #banner1 {
+      width: 0%;
+      .baro {
+        .lucky {
+          left: 13vw;
+          display: none;
+        }
+
+        .star {
+          left: 19vw;
+          display: none;
+        }
+
+        span {
+          left: 6vw;
+          display: none;
+        }
+
+        a {
+          left: 5.5vw;
+          display: none;
+        }
+      }
+    }
+    // 오른쪽배너
+    #banner2 {
+      width: 100%;
+
+      .baro2 {
+
+        li {
+
+          h3 {
+            font: bold 23px/6vh "맑은 고딕";
+            color: #fff;
+          }
+          p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // transform: translateX(-50px);
+            width: 100%;
+            // background-color: #000;
+            font: 20px/8vh "맑은 고딕";
+            color: #fff;
+
+            span {
+              font: bold 37px/8vh "맑은 고딕";
+              margin: 0 20px;
+
+              .span1 {
+                color: #f3306e;
+
+                margin: 0px;
+              }
+            }
+          }
+        }
+      }
+
+      .navi {
+        display: flex;
+        position: absolute;
+        top: 6vh;
+        left: 5vw;
+
+        .prev {
+          &::before,
+          &::after {
+            left: 25px;
+            transform-origin: left center;
+          }
+
+          span {
+            left: 25px;
+          }
+        }
+        .next {
+          position: absolute;
+          left: 73vw;
+
+          &::before,
+          &::after {
+            right: 25px;
+            transform-origin: right center;
+          }
+
+          span {
+            right: 25px;
+          }
+        }
+
+        .prev,
+        .next {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          border: 1px solid #555;
+          cursor: pointer;
+          position: relative;
+          bottom: 5px;
+          background-color: #fff;
+
+          &::before,
+          &::after {
+            content: "";
+            display: block;
+            width: 17px;
+            height: 2px;
+            background-color: #555;
+            position: absolute;
+          }
+
+          &::before {
+            top: 49%;
+            transform: rotate(45deg) translateX(0px);
+          }
+
+          &::after {
+            bottom: 49%;
+            transform: rotate(-45deg) translateX(0px);
+          }
+
+          span {
+            width: 24px;
+            height: 2px;
+            background-color: #555;
+            position: absolute;
+            top: 49%;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

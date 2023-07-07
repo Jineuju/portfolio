@@ -177,11 +177,10 @@ header .inner .menuMo .gnbMo li .sub li a {
   display: block;
   text-align: center;
   margin-bottom: 20px;
+  transition: all 0.5s;
 }
 header .inner .menuMo .gnbMo li .sub li:hover a {
-  background-color: #bbb;
-  width: 100%;
-  height: 100%;
+  color: #61001f;
 }
 
 @media screen and (max-width: 1440px) {
@@ -246,9 +245,9 @@ header .inner .menuMo .gnbMo li .sub li:hover a {
     width: 100%;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 425px) {
   header .inner .logo {
-    left: 3%;
+    left: 10%;
   }
   header .inner .until li a {
     padding: 10px 20px;
@@ -338,7 +337,7 @@ footer .inner .footerText span {
     font: bold 20px/1 "맑은 고딕";
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 425px) {
   footer .inner {
     top: 60px;
     left: 0;
@@ -753,6 +752,114 @@ main .banners #banner2 .navi .next span {
   }
 }
 @media screen and (max-width: 768px) {
+  main .banners #banner1 {
+    width: 0%;
+  }
+  main .banners #banner1 .baro .lucky {
+    left: 13vw;
+    display: none;
+  }
+  main .banners #banner1 .baro .star {
+    left: 19vw;
+    display: none;
+  }
+  main .banners #banner1 .baro span {
+    left: 6vw;
+    display: none;
+  }
+  main .banners #banner1 .baro a {
+    left: 5.5vw;
+    display: none;
+  }
+  main .banners #banner2 {
+    width: 100%;
+  }
+  main .banners #banner2 .baro2 li h3 {
+    font: bold 23px/6vh "맑은 고딕";
+    color: #fff;
+  }
+  main .banners #banner2 .baro2 li p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font: 20px/8vh "맑은 고딕";
+    color: #fff;
+  }
+  main .banners #banner2 .baro2 li p span {
+    font: bold 37px/8vh "맑은 고딕";
+    margin: 0 20px;
+  }
+  main .banners #banner2 .baro2 li p span .span1 {
+    color: #f3306e;
+    margin: 0px;
+  }
+  main .banners #banner2 .navi {
+    display: flex;
+    position: absolute;
+    top: 6vh;
+    left: 5vw;
+  }
+  main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after {
+    left: 25px;
+    transform-origin: left center;
+  }
+  main .banners #banner2 .navi .prev span {
+    left: 25px;
+  }
+  main .banners #banner2 .navi .next {
+    position: absolute;
+    left: 73vw;
+  }
+  main .banners #banner2 .navi .next::before, main .banners #banner2 .navi .next::after {
+    right: 25px;
+    transform-origin: right center;
+  }
+  main .banners #banner2 .navi .next span {
+    right: 25px;
+  }
+  main .banners #banner2 .navi .prev,
+  main .banners #banner2 .navi .next {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #555;
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+    background-color: #fff;
+  }
+  main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after,
+  main .banners #banner2 .navi .next::before,
+  main .banners #banner2 .navi .next::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+  }
+  main .banners #banner2 .navi .prev::before,
+  main .banners #banner2 .navi .next::before {
+    top: 49%;
+    transform: rotate(45deg) translateX(0px);
+  }
+  main .banners #banner2 .navi .prev::after,
+  main .banners #banner2 .navi .next::after {
+    bottom: 49%;
+    transform: rotate(-45deg) translateX(0px);
+  }
+  main .banners #banner2 .navi .prev span,
+  main .banners #banner2 .navi .next span {
+    width: 24px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+    top: 49%;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 425px) {
   main .banners #banner1 {
     width: 0%;
   }
@@ -1650,6 +1757,15 @@ main #slide .frame li img {
   }
   main #slide .frame li img {
     height: 24vh;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  main #slide {
+    height: 30vh;
+  }
+  main #slide .frame li img {
+    height: 30vh;
     width: 100vw;
   }
 }

@@ -72,3 +72,16 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  #slide {
+    height: 30vh;
+    .frame {
+      li {
+        img {
+          height: 30vh;
+          width: 100vw;
+        }
+      }
+    }
+  }
+}
