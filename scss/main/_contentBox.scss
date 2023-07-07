@@ -514,4 +514,165 @@
   }
   }
 }
+
+@media screen and (max-width:425px) {
+  #sosik {
+  
+    .inner {
+      top: 5vh;
+      left: 7vw;
+      h1{
+        font-size: 36px;
+      }
+      span{
+        display: none;
+      }
+    }
+  
+  
+    .NGboard {
+      top: 18vh;
+      .tab {
+  
+        li {
+          width: 22vw;
+  
+          a {
+            font: bold 14px/50px "맑은 고딕";
+          }
+        }
+      }
+
+      .content {
+        width: 60%;
+      #notice,
+      #event,
+      #board {
+        width: 95vw;
+
+        ul {
+          width: 50vw;
+          li {
+            a {
+              font: bold 16px/1.3 "맑은 고딕";
+              color: #000;
+            }
+            span{
+              display: none;
+            }
+
+          }
+        }
+      }
+    }
+  }
+  
+  .snsContent {
+    position: relative;
+    display: none;
+    a {
+      .plusBtn {
+        position: absolute;
+        top: 38vh;
+        left: 82vw;
+        z-index: 11;
+      }
+    }
+
+    .inner {
+      display: block;
+      position: absolute;
+      top: 130px;
+      left: 60vw;
+      width: 36vw;
+      height: 320px;
+      background-color: #aaa;
+      border-radius: 20px;
+      padding: 20px 0 0 30px;
+      z-index: 10;
+
+      .title {
+        display: flex;
+
+        h2 {
+          margin-left: 2vw;
+          font: bold 22px/1 "맑은 고딕";
+          color: #a50034;
+        }
+
+        h3 {
+          font: bold 22px/1 "맑은 고딕";
+          margin-left: 1vw;
+        }
+      }
+
+      .subTitle {
+        margin-top: 20px;
+
+        span {
+          font: 17px/1.3 "맑은 고딕";
+          text-align: left;
+          display: none;
+        }
+      }
+
+      .sns {
+        ul {
+          li {
+            margin-top: 25px;
+            cursor: pointer;
+
+            &:nth-child(1) {
+              width: 110px;
+              height: 110px;
+              overflow: hidden;
+              background-image: url(../images/sns.png);
+              background-repeat: no-repeat;
+
+              a {
+                width: 100%;
+                height: 100%;
+                display: block;
+              }
+            }
+
+            &:nth-child(2) {
+              width: 110px;
+              height: 110px;
+              overflow: hidden;
+              background-image: url(../images/sns.png);
+              background-repeat: no-repeat;
+              background-position: 50% 74%;
+              margin-top: -110px;
+              margin-left: 120px;
+              a {
+                width: 100%;
+                height: 100%;
+                display: block;
+              }
+            }
+
+            &:nth-child(3) {
+              width: 110px;
+              height: 110px;
+              overflow: hidden;
+              background-image: url(../images/sns.png);
+              background-repeat: no-repeat;
+              background-position: right bottom;
+              position: absolute;
+              bottom: 3vh;
+              left: -28.5vw;
+              a {
+                width: 100%;
+                height: 100%;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  }
+}
   

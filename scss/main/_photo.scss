@@ -17,6 +17,7 @@
   }
 
   .wrap{
+    overflow: hidden;
     ul{
       display: flex;
       position: absolute;
@@ -223,6 +224,59 @@
         position: absolute;
         width: 370px;
         left: 26vw;
+        bottom: 5px;
+        height: 70px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        // padding: 20px 120px;
+        font: 18px/30px "맑은 고딕";
+        cursor: pointer;
+        border-radius: 20px;
+        transition: 0.3s;
+    
+        &:hover{
+          background-color: #aaa;
+          color: #fff;
+        }
+      }
+    }
+  
+  }
+}
+@media screen and (max-width:425px) {
+  #photo {
+    .inner {
+      left: 7vw;
+    }
+  
+    .wrap{
+      width: 100%;
+      ul{
+        width: calc(25% * 6);
+        overflow: hidden;
+        li{
+         margin-left:10vw;
+         margin-right: 7vw;
+         img{
+          width: 36vw;
+         }
+        }
+      }
+    }
+  
+    .btn{
+      left: 2vw;
+      .next{
+        position: absolute;
+        left: 75vw;
+        z-index: 10;
+      }
+      #more{
+        display: block;
+        position: absolute;
+        width: 40vw;
+        left: 28vw;
         bottom: 5px;
         height: 70px;
         border: none;
