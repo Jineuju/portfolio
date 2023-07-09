@@ -245,6 +245,31 @@ header .inner .menuMo .gnbMo li .sub li:hover a {
     width: 100%;
   }
 }
+@media screen and (max-width: 625px) {
+  header .inner .logo {
+    left: 10%;
+  }
+  header .inner .gnbWrap #gnb {
+    left: 25%;
+    margin-left: 60px;
+    z-index: 10;
+    width: 65%;
+    display: none;
+  }
+  header .inner .gnbWrap #gnb li {
+    width: 20vw;
+  }
+  header .inner .gnbWrap #gnb li .sub li a {
+    width: 100%;
+  }
+  header .inner .btnCall {
+    right: 12vw;
+    display: block;
+  }
+  header .inner .menuMo {
+    display: block;
+  }
+}
 @media screen and (max-width: 425px) {
   header .inner .logo {
     left: 10%;
@@ -335,6 +360,22 @@ footer .inner .footerText span {
   }
   footer .inner .footerText span {
     font: bold 20px/1 "맑은 고딕";
+  }
+}
+@media screen and (max-width: 625px) {
+  footer .inner {
+    top: 60px;
+    left: 0;
+  }
+  footer .inner .footerSns li img {
+    width: 50vw;
+  }
+  footer .inner .footerText p {
+    font: 17px/1.3 "맑은 고딕";
+    padding: 10px 20px;
+  }
+  footer .inner .footerText span {
+    font: bold 22px/1 "맑은 고딕";
   }
 }
 @media screen and (max-width: 425px) {
@@ -956,7 +997,7 @@ main #sosik {
   background-color: #e9e9e9;
 }
 main #sosik .inner {
-  position: absolute;
+  position: relative;
   top: 50px;
   left: 430px;
   display: flex;
@@ -971,7 +1012,7 @@ main #sosik .inner span {
   color: #111;
 }
 main #sosik .NGboard {
-  flex: 1.5;
+  width: 450px;
   height: 60px;
   position: absolute;
   top: 200px;
@@ -987,6 +1028,7 @@ main #sosik .NGboard .tab li {
   width: 150px;
   height: 50px;
   background-color: #333;
+  color: #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -996,13 +1038,7 @@ main #sosik .NGboard .tab li {
 }
 main #sosik .NGboard .tab li.on {
   background-color: #ddd;
-}
-main #sosik .NGboard .tab li.on a {
   color: #333;
-}
-main #sosik .NGboard .tab li a {
-  font: bold 20px/50px "맑은 고딕";
-  color: #fff;
 }
 main #sosik .NGboard .content {
   width: 700px;
@@ -1071,7 +1107,7 @@ main #sosik .snsContent a {
 main #sosik .snsContent a .plusBtn {
   display: flex;
   position: absolute;
-  top: 30px;
+  top: -1vh;
   right: 350px;
   width: 70px;
   height: 70px;
@@ -1102,7 +1138,7 @@ main #sosik .snsContent a .plusBtn::after {
 main #sosik .snsContent .inner {
   display: block;
   position: absolute;
-  top: 130px;
+  top: 70px;
   left: 1150px;
   width: 400px;
   height: 320px;
@@ -1185,7 +1221,7 @@ main #sosik .snsContent .inner .sns ul li:nth-child(3) a {
     left: 13vw;
   }
   main #sosik .snsContent a .plusBtn {
-    top: 3vh;
+    top: -1vh;
     right: 14vw;
   }
   main #sosik .snsContent .inner {
@@ -1202,7 +1238,7 @@ main #sosik .snsContent .inner .sns ul li:nth-child(3) a {
     left: 10vw;
   }
   main #sosik .snsContent a .plusBtn {
-    top: 3vh;
+    top: -1vh;
     right: 5vw;
   }
   main #sosik .snsContent .inner {
@@ -1241,7 +1277,7 @@ main #sosik .snsContent .inner .sns ul li:nth-child(3) a {
     color: #000;
   }
   main #sosik .snsContent a .plusBtn {
-    top: 3vh;
+    top: -1vh;
     right: 5vw;
   }
   main #sosik .snsContent .inner {
@@ -1717,7 +1753,8 @@ main #photo .btn .next::before, main #photo .btn .next::after {
 main #photo .btn .next span {
   right: 25px;
 }
-main #photo .btn .prev, main #photo .btn .next {
+main #photo .btn .prev,
+main #photo .btn .next {
   width: 70px;
   height: 70px;
   cursor: pointer;
@@ -1725,22 +1762,27 @@ main #photo .btn .prev, main #photo .btn .next {
   bottom: 5px;
   transition: 0.2s;
 }
-main #photo .btn .prev::before, main #photo .btn .prev::after, main #photo .btn .next::before, main #photo .btn .next::after {
+main #photo .btn .prev::before, main #photo .btn .prev::after,
+main #photo .btn .next::before,
+main #photo .btn .next::after {
   content: "";
   width: 25px;
   height: 2px;
   display: block;
   background-color: #000;
 }
-main #photo .btn .prev::before, main #photo .btn .next::before {
+main #photo .btn .prev::before,
+main #photo .btn .next::before {
   top: 49%;
   transform: rotate(45deg) translateX(0px);
 }
-main #photo .btn .prev::after, main #photo .btn .next::after {
+main #photo .btn .prev::after,
+main #photo .btn .next::after {
   bottom: 49%;
   transform: rotate(-45deg) translateX(0px);
 }
-main #photo .btn .prev span, main #photo .btn .next span {
+main #photo .btn .prev span,
+main #photo .btn .next span {
   width: 40px;
   height: 2px;
   background-color: #000;
@@ -1748,7 +1790,8 @@ main #photo .btn .prev span, main #photo .btn .next span {
   top: 49%;
   opacity: 1;
 }
-main #photo .btn .prev:hover, main #photo .btn .next:hover {
+main #photo .btn .prev:hover,
+main #photo .btn .next:hover {
   transform: scale(1.5);
 }
 main #photo #more {
@@ -1850,16 +1893,54 @@ main #photo #more:hover {
     color: #fff;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 625px) {
   main #photo .inner {
     left: 7vw;
   }
   main #photo .wrap {
     width: 100%;
   }
-  main #photo .wrap .panel {
-    width: 150%;
-    overflow: hidden;
+  main #photo .wrap .panel li {
+    margin-left: 10vw;
+    margin-right: 7vw;
+  }
+  main #photo .wrap .panel li img {
+    width: 36vw;
+  }
+  main #photo .btn {
+    left: 2vw;
+  }
+  main #photo .btn .next {
+    position: absolute;
+    left: 55vw;
+    z-index: 10;
+  }
+  main #photo .btn #more {
+    display: block;
+    position: absolute;
+    width: 40vw;
+    left: 28vw;
+    bottom: 5px;
+    height: 70px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font: 18px/30px "맑은 고딕";
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  main #photo .btn #more:hover {
+    background-color: #aaa;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 425px) {
+  main #photo .inner {
+    left: 7vw;
+  }
+  main #photo .wrap {
+    width: 100%;
   }
   main #photo .wrap .panel li {
     margin-left: 10vw;

@@ -5,11 +5,10 @@
   background-color: #e9e9e9;
 
   .inner {
-    position: absolute;
+    position: relative;
     top: 50px;
     left: 430px;
     display: flex;
-
     h1 {
       font: bold 40px/1 "맑은 고딕";
       color: #555;
@@ -23,7 +22,7 @@
   }
 
   .NGboard {
-    flex: 1.5;
+    width: 450px;
     height: 60px;
     position: absolute;
     top: 200px;
@@ -39,6 +38,7 @@
         width: 150px;
         height: 50px;
         background-color: #333;
+        color: #ddd;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,14 +48,7 @@
 
         &.on {
           background-color: #ddd;
-          a {
-            color: #333;
-          }
-        }
-
-        a {
-          font: bold 20px/50px "맑은 고딕";
-          color: #fff;
+          color: #333;
         }
       }
     }
@@ -131,7 +124,7 @@
       .plusBtn {
         display: flex;
         position: absolute;
-        top: 30px;
+        top: -1vh;
         right: 350px;
         width: 70px;
         height: 70px;
@@ -166,7 +159,7 @@
     .inner {
       display: block;
       position: absolute;
-      top: 130px;
+      top: 70px;
       left: 1150px;
       width: 400px;
       height: 320px;
@@ -255,53 +248,52 @@
     }
   }
 }
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
   #sosik {
     .inner {
       top: 5vh;
       left: 12vw;
     }
-  
+
     .NGboard {
       top: 22vh;
       left: 13vw;
     }
-  
+
     .snsContent {
       a {
         .plusBtn {
-          top: 3vh;
+          top: -1vh;
           right: 14vw;
         }
       }
-  
+
       .inner {
         left: 58vw;
       }
     }
   }
 }
-@media screen and (max-width:1197px) {
+@media screen and (max-width: 1197px) {
   #sosik {
-  
     .inner {
       top: 5vh;
       left: 7vw;
     }
-  
+
     .NGboard {
       top: 22vh;
       left: 10vw;
     }
-  
+
     .snsContent {
       a {
         .plusBtn {
-          top: 3vh;
+          top: -1vh;
           right: 5vw;
         }
       }
-  
+
       .inner {
         left: 63vw;
       }
@@ -309,22 +301,20 @@
   }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   #sosik {
-  
     .inner {
       top: 5vh;
       left: 7vw;
     }
-  
+
     .NGboard {
       top: 22vh;
       left: 10vw;
       .tab {
-  
         li {
           width: 10vw;
-  
+
           a {
             font: bold 16px/50px "맑은 고딕";
           }
@@ -332,54 +322,50 @@
       }
 
       .content {
-
-      #notice,
-      #event,
-      #board {
-        width: 50vw;
-
-        ul {
+        #notice,
+        #event,
+        #board {
           width: 50vw;
-          li {
-            a {
-              font: bold 16px/1.3 "맑은 고딕";
-              color: #000;
-            }
 
+          ul {
+            width: 50vw;
+            li {
+              a {
+                font: bold 16px/1.3 "맑은 고딕";
+                color: #000;
+              }
+            }
           }
         }
       }
     }
-  }
-  
+
     .snsContent {
       a {
         .plusBtn {
-          top: 3vh;
+          top: -1vh;
           right: 5vw;
         }
       }
-  
+
       .inner {
         left: 58vw;
       }
     }
   }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #sosik {
-  
     .inner {
       top: 5vh;
       left: 7vw;
     }
-  
+
     .NGboard {
       .tab {
-  
         li {
           width: 13.5vw;
-  
+
           a {
             font: bold 14px/50px "맑은 고딕";
           }
@@ -387,156 +373,151 @@
       }
 
       .content {
-
-      #notice,
-      #event,
-      #board {
-        width: 50vw;
-
-        ul {
+        #notice,
+        #event,
+        #board {
           width: 50vw;
-          li {
-            a {
-              font: bold 16px/1.3 "맑은 고딕";
-              color: #000;
-            }
 
+          ul {
+            width: 50vw;
+            li {
+              a {
+                font: bold 16px/1.3 "맑은 고딕";
+                color: #000;
+              }
+            }
           }
         }
       }
     }
-  }
-  
-  .snsContent {
-    position: relative;
-    a {
-      .plusBtn {
+
+    .snsContent {
+      position: relative;
+      a {
+        .plusBtn {
+          position: absolute;
+          top: 38vh;
+          left: 82vw;
+          z-index: 11;
+        }
+      }
+
+      .inner {
+        display: block;
         position: absolute;
-        top: 38vh;
-        left: 82vw;
-        z-index: 11;
-      }
-    }
+        top: 130px;
+        left: 60vw;
+        width: 36vw;
+        height: 320px;
+        background-color: #aaa;
+        border-radius: 20px;
+        padding: 20px 0 0 30px;
+        z-index: 10;
 
-    .inner {
-      display: block;
-      position: absolute;
-      top: 130px;
-      left: 60vw;
-      width: 36vw;
-      height: 320px;
-      background-color: #aaa;
-      border-radius: 20px;
-      padding: 20px 0 0 30px;
-      z-index: 10;
+        .title {
+          display: flex;
 
-      .title {
-        display: flex;
+          h2 {
+            margin-left: 2vw;
+            font: bold 22px/1 "맑은 고딕";
+            color: #a50034;
+          }
 
-        h2 {
-          margin-left: 2vw;
-          font: bold 22px/1 "맑은 고딕";
-          color: #a50034;
+          h3 {
+            font: bold 22px/1 "맑은 고딕";
+            margin-left: 1vw;
+          }
         }
 
-        h3 {
-          font: bold 22px/1 "맑은 고딕";
-          margin-left: 1vw;
+        .subTitle {
+          margin-top: 20px;
+
+          span {
+            font: 17px/1.3 "맑은 고딕";
+            text-align: left;
+            display: none;
+          }
         }
-      }
 
-      .subTitle {
-        margin-top: 20px;
+        .sns {
+          ul {
+            li {
+              margin-top: 25px;
+              cursor: pointer;
 
-        span {
-          font: 17px/1.3 "맑은 고딕";
-          text-align: left;
-          display: none;
-        }
-      }
+              &:nth-child(1) {
+                width: 110px;
+                height: 110px;
+                overflow: hidden;
+                background-image: url(../images/sns.png);
+                background-repeat: no-repeat;
 
-      .sns {
-        ul {
-          li {
-            margin-top: 25px;
-            cursor: pointer;
-
-            &:nth-child(1) {
-              width: 110px;
-              height: 110px;
-              overflow: hidden;
-              background-image: url(../images/sns.png);
-              background-repeat: no-repeat;
-
-              a {
-                width: 100%;
-                height: 100%;
-                display: block;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                }
               }
-            }
 
-            &:nth-child(2) {
-              width: 110px;
-              height: 110px;
-              overflow: hidden;
-              background-image: url(../images/sns.png);
-              background-repeat: no-repeat;
-              background-position: 50% 74%;
-              margin-top: -110px;
-              margin-left: 120px;
-              a {
-                width: 100%;
-                height: 100%;
-                display: block;
+              &:nth-child(2) {
+                width: 110px;
+                height: 110px;
+                overflow: hidden;
+                background-image: url(../images/sns.png);
+                background-repeat: no-repeat;
+                background-position: 50% 74%;
+                margin-top: -110px;
+                margin-left: 120px;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                }
               }
-            }
 
-            &:nth-child(3) {
-              width: 110px;
-              height: 110px;
-              overflow: hidden;
-              background-image: url(../images/sns.png);
-              background-repeat: no-repeat;
-              background-position: right bottom;
-              position: absolute;
-              bottom: 3vh;
-              left: -28.5vw;
-              a {
-                width: 100%;
-                height: 100%;
-                display: block;
+              &:nth-child(3) {
+                width: 110px;
+                height: 110px;
+                overflow: hidden;
+                background-image: url(../images/sns.png);
+                background-repeat: no-repeat;
+                background-position: right bottom;
+                position: absolute;
+                bottom: 3vh;
+                left: -28.5vw;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                }
               }
             }
           }
         }
       }
     }
-  }
   }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width: 425px) {
   #sosik {
-  
     .inner {
       top: 5vh;
       left: 7vw;
-      h1{
+      h1 {
         font-size: 36px;
       }
-      span{
+      span {
         display: none;
       }
     }
-  
-  
+
     .NGboard {
       top: 18vh;
       .tab {
-  
         li {
           width: 22vw;
-  
+
           a {
             font: bold 14px/50px "맑은 고딕";
           }
@@ -545,134 +526,132 @@
 
       .content {
         width: 60%;
-      #notice,
-      #event,
-      #board {
-        width: 95vw;
+        #notice,
+        #event,
+        #board {
+          width: 95vw;
 
-        ul {
-          width: 50vw;
-          li {
-            a {
-              font: bold 16px/1.3 "맑은 고딕";
-              color: #000;
+          ul {
+            width: 50vw;
+            li {
+              a {
+                font: bold 16px/1.3 "맑은 고딕";
+                color: #000;
+              }
+              span {
+                display: none;
+              }
             }
-            span{
-              display: none;
-            }
-
           }
         }
       }
     }
-  }
-  
-  .snsContent {
-    position: relative;
-    display: none;
-    a {
-      .plusBtn {
+
+    .snsContent {
+      position: relative;
+      display: none;
+      a {
+        .plusBtn {
+          position: absolute;
+          top: 38vh;
+          left: 82vw;
+          z-index: 11;
+        }
+      }
+
+      .inner {
+        display: block;
         position: absolute;
-        top: 38vh;
-        left: 82vw;
-        z-index: 11;
-      }
-    }
+        top: 130px;
+        left: 60vw;
+        width: 36vw;
+        height: 320px;
+        background-color: #aaa;
+        border-radius: 20px;
+        padding: 20px 0 0 30px;
+        z-index: 10;
 
-    .inner {
-      display: block;
-      position: absolute;
-      top: 130px;
-      left: 60vw;
-      width: 36vw;
-      height: 320px;
-      background-color: #aaa;
-      border-radius: 20px;
-      padding: 20px 0 0 30px;
-      z-index: 10;
+        .title {
+          display: flex;
 
-      .title {
-        display: flex;
+          h2 {
+            margin-left: 2vw;
+            font: bold 22px/1 "맑은 고딕";
+            color: #a50034;
+          }
 
-        h2 {
-          margin-left: 2vw;
-          font: bold 22px/1 "맑은 고딕";
-          color: #a50034;
+          h3 {
+            font: bold 22px/1 "맑은 고딕";
+            margin-left: 1vw;
+          }
         }
 
-        h3 {
-          font: bold 22px/1 "맑은 고딕";
-          margin-left: 1vw;
+        .subTitle {
+          margin-top: 20px;
+
+          span {
+            font: 17px/1.3 "맑은 고딕";
+            text-align: left;
+            display: none;
+          }
         }
-      }
 
-      .subTitle {
-        margin-top: 20px;
+        .sns {
+          ul {
+            li {
+              margin-top: 25px;
+              cursor: pointer;
 
-        span {
-          font: 17px/1.3 "맑은 고딕";
-          text-align: left;
-          display: none;
-        }
-      }
+              &:nth-child(1) {
+                width: 110px;
+                height: 110px;
+                overflow: hidden;
+                background-image: url(../images/sns.png);
+                background-repeat: no-repeat;
 
-      .sns {
-        ul {
-          li {
-            margin-top: 25px;
-            cursor: pointer;
-
-            &:nth-child(1) {
-              width: 110px;
-              height: 110px;
-              overflow: hidden;
-              background-image: url(../images/sns.png);
-              background-repeat: no-repeat;
-
-              a {
-                width: 100%;
-                height: 100%;
-                display: block;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                }
               }
-            }
 
-            &:nth-child(2) {
-              width: 110px;
-              height: 110px;
-              overflow: hidden;
-              background-image: url(../images/sns.png);
-              background-repeat: no-repeat;
-              background-position: 50% 74%;
-              margin-top: -110px;
-              margin-left: 120px;
-              a {
-                width: 100%;
-                height: 100%;
-                display: block;
+              &:nth-child(2) {
+                width: 110px;
+                height: 110px;
+                overflow: hidden;
+                background-image: url(../images/sns.png);
+                background-repeat: no-repeat;
+                background-position: 50% 74%;
+                margin-top: -110px;
+                margin-left: 120px;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                }
               }
-            }
 
-            &:nth-child(3) {
-              width: 110px;
-              height: 110px;
-              overflow: hidden;
-              background-image: url(../images/sns.png);
-              background-repeat: no-repeat;
-              background-position: right bottom;
-              position: absolute;
-              bottom: 3vh;
-              left: -28.5vw;
-              a {
-                width: 100%;
-                height: 100%;
-                display: block;
+              &:nth-child(3) {
+                width: 110px;
+                height: 110px;
+                overflow: hidden;
+                background-image: url(../images/sns.png);
+                background-repeat: no-repeat;
+                background-position: right bottom;
+                position: absolute;
+                bottom: 3vh;
+                left: -28.5vw;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                }
               }
             }
           }
         }
       }
     }
-  }
   }
 }
-  

@@ -81,23 +81,47 @@ footer {
     }
   }
 }
-@media screen and (max-width: 425px) {
+
+@media screen and (max-width: 625px) {
   footer {
-  
     .inner {
       top: 60px;
       left: 0;
-  
-      .footerSns {
-  
-        li {
 
-          img{
+      .footerSns {
+        li {
+          img {
+            width: 50vw;
+          }
+        }
+      }
+
+      .footerText {
+        p {
+          font: 17px/1.3 "맑은 고딕";
+          padding: 10px 20px;
+        }
+        span {
+          font: bold 22px/1 "맑은 고딕";
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  footer {
+    .inner {
+      top: 60px;
+      left: 0;
+
+      .footerSns {
+        li {
+          img {
             width: 250px;
           }
         }
       }
-  
+
       .footerText {
         p {
           font: 14px/1.3 "맑은 고딕";
@@ -109,4 +133,4 @@ footer {
       }
     }
   }
-}  
+}

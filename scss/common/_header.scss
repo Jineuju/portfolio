@@ -105,7 +105,7 @@ header {
         }
       }
     }
-    .btnCall{
+    .btnCall {
       position: absolute;
       top: 50%;
       right: 30px;
@@ -114,7 +114,7 @@ header {
       // border: 1px solid #fff;
       display: none;
 
-      &::before{
+      &::before {
         content: "";
         display: block;
         width: 100%;
@@ -126,7 +126,7 @@ header {
         transition: top 0.5s 0s, transform 0.5s 0.5s;
       }
 
-      &::after{
+      &::after {
         content: "";
         display: block;
         width: 100%;
@@ -138,7 +138,7 @@ header {
         transition: bottom 0.5s 0s, transform 0.5s 0.5s;
       }
 
-      span{
+      span {
         display: block;
         width: 100%;
         height: 2px;
@@ -150,27 +150,27 @@ header {
         transition: 0.5s;
       }
 
-      &.on{
-        &::before{
+      &.on {
+        &::before {
           top: 50%;
           margin-top: -1px;
           transform: rotate(45deg);
         }
 
-        &::after{
+        &::after {
           bottom: 50%;
           margin-bottom: -1px;
           transform: rotate(-45deg);
         }
 
-        span{
+        span {
           transform: translate(100%);
           opacity: 0;
         }
       }
     }
 
-    .menuMo{
+    .menuMo {
       width: 270px;
       height: 100%;
       background-color: #a50034;
@@ -183,25 +183,25 @@ header {
       transition: all 0.5s;
       display: none;
 
-      &.on{
+      &.on {
         left: 0;
       }
-      .gnbMo{
+      .gnbMo {
         border-top: 1px solid #ccc;
         padding-top: 30px;
         border-bottom: 1px solid #ccc;
         padding-bottom: 30px;
-        li{
-          a{
+        li {
+          a {
             font: bold 30px/1 "arial";
             color: #fff;
             text-align: center;
             display: block;
             margin-bottom: 20px;
           }
-          .sub{
-            li{
-              a{
+          .sub {
+            li {
+              a {
                 font: 18px/1 "arial";
                 color: #ddd;
                 display: block;
@@ -209,8 +209,8 @@ header {
                 margin-bottom: 20px;
                 transition: all 0.5s;
               }
-              &:hover{
-                a{
+              &:hover {
+                a {
                   color: #61001f;
                 }
               }
@@ -228,7 +228,6 @@ header {
       .logo {
         left: 10%;
       }
-
 
       // gnb
       .gnbWrap {
@@ -349,6 +348,46 @@ header {
   }
 }
 
+@media screen and (max-width: 625px) {
+  header {
+    .inner {
+      // 로고
+      .logo {
+        left: 10%;
+      }
+
+      // gnb
+      .gnbWrap {
+        #gnb {
+          left: 25%;
+          margin-left: 60px;
+          z-index: 10;
+          width: 65%;
+          display: none;
+          li {
+            width: 20vw;
+
+            .sub {
+              li {
+                a {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .btnCall {
+        right: 12vw;
+        display: block;
+      }
+      .menuMo {
+        display: block;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 425px) {
   header {
     .inner {
@@ -387,10 +426,10 @@ header {
           }
         }
       }
-      .btnCall{
+      .btnCall {
         display: block;
       }
-      .menuMo{
+      .menuMo {
         display: block;
       }
     }

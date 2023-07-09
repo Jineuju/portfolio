@@ -1,10 +1,16 @@
-$(".tab>li").on("click", function(){
-    $(".tab>li").on("click", function () {
-        $(".tab>li").removeClass("on");
-        $(".content>div").removeClass("on");
-        $(this).addClass("on");
-      
-        var conId = $(this).children("a").attr("href");
-        $(conId).addClass("on");
-      });
+
+$(".tab>li").on("click", function () {
+  $(this).on("click", function () {
+    $(this).removeClass("on");
+    $(".content>div").removeClass("on");
+    $(this).addClass("on");
+
+    var conId = $(this).attr("data-id");
+
+    $(conId).addClass("on");
+  });
 })
+
+
+
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,13 @@
     <script src="script/jquery-3.6.4.js"></script>
     <script defer src="script/gnbmo.js"></script>
     <script defer src="script/main.js"></script>
-    <script defer src="script/youtube.js"></script>
-    <script defer src="script/photo.js"></script>
+    <script defer src="script/tab.js"></script>
+    <!-- <script defer src="script/youtube.js"></script> -->
+    <!-- <script defer src="script/photo.js"></script> -->
     <script defer src="script/photoslide.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="inner">
@@ -54,7 +57,8 @@
                             <li><a href="photo.html">트윈스포토</a></li>
                             <li><a href="cheersong.html">응원가</a></li>
                             <li><a href="join.html">회원가입</a></li>
-                            <li><a href="https://www.ticketlink.co.kr/sports/baseball/59#reservation" target="_blink">티켓예매</a></li>
+                            <li><a href="https://www.ticketlink.co.kr/sports/baseball/59#reservation"
+                                    target="_blink">티켓예매</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -90,11 +94,12 @@
                             <li><a href="photo.html">트윈스포토</a></li>
                             <li><a href="cheersong.html">응원가</a></li>
                             <li><a href="join.html">회원가입</a></li>
-                            <li><a href="https://www.ticketlink.co.kr/sports/baseball/59#reservation" target="_blink">티켓예매</a></li>
+                            <li><a href="https://www.ticketlink.co.kr/sports/baseball/59#reservation"
+                                    target="_blink">티켓예매</a></li>
                         </ul>
                     </li>
                 </ul>
-            </nav>           
+            </nav>
         </div>
     </header>
     <main>
@@ -123,7 +128,8 @@
                     <span>티켓예매 바로가기</span>
                     <div class="tinggle">
                         <ul class="bat">
-                            <a href="https://www.ticketlink.co.kr/sports/baseball/59#reservation" title="티켓예매 바로가기" target="_blink">Cilck!!</a>
+                            <a href="https://www.ticketlink.co.kr/sports/baseball/59#reservation" title="티켓예매 바로가기"
+                                target="_blink">Cilck!!</a>
                         </ul>
                     </div>
                 </ul>
@@ -179,7 +185,7 @@
                     <a href="twinsNews.html" class="btn"><span>더보기</span></a>
                 </div>
             </div>
-            <div class="wrap">      
+            <div class="wrap">
                 <article>
                     <ul class="pic">
                         <img src="images/news1.jpg" alt="LG트윈스 승리기원시구 및 다양한 이벤트 진행">
@@ -188,7 +194,7 @@
                         <li><a href="#">LG트윈스 승리기원시구 진행</a></li>
                         <span>2023-05-18</span>
                     </ul>
-                   </article>
+                </article>
                 <article>
                     <ul class="pic">
                         <img src="images/news2.jpg" alt="LG트윈스 세이브더칠드런 브랜드데이 개최">
@@ -197,8 +203,8 @@
                         <li><a href="#">LG트윈스 세이브더칠드런 데이 <br> 개최</a></li>
                         <span>2023-05-17</span>
                     </ul>
-                   </article>
-                </div>
+                </article>
+            </div>
             <div class="wrap">
                 <article>
                     <ul class="pic">
@@ -208,29 +214,30 @@
                         <li><a href="#">LG트윈스 '잔망루피데이' 진행</a></li>
                         <span>2023-05-16</span>
                     </ul>
-                       </article>
-                    <article>
-                        <ul class="pic">
-                            <img src="images/news4.jpg" alt="LG트윈스 & 위글위글 콜라보 상품 출시">
-                        </ul>
-                        <ul class="content">
-                            <li><a href="#">LG트윈스 & 위글위글 콜라보 <br>상품 출시</a></li>
-                            <span>2023-05-16</span>
-                        </ul>
-                </article>    
+                </article>
+                <article>
+                    <ul class="pic">
+                        <img src="images/news4.jpg" alt="LG트윈스 & 위글위글 콜라보 상품 출시">
+                    </ul>
+                    <ul class="content">
+                        <li><a href="#">LG트윈스 & 위글위글 콜라보 <br>상품 출시</a></li>
+                        <span>2023-05-16</span>
+                    </ul>
+                </article>
             </div>
-            
+
         </section>
         <section id="sosik">
             <div class="inner">
                 <h1>구단소식&이벤트</h1>
                 <span>LG트윈스의 다양한 소식들을 만나보세요!</span>
             </div>
+
             <div class="NGboard">
                 <ul class="tab">
-                    <li class="on"><a href="#notice">공지사항</a></li>
-                    <li><a href="#event">이벤트</a></li>
-                    <li><a href="#board">자유게시판</a></li>
+                    <li class="on" data-id="#notice">공지사항</li>
+                    <li data-id="#event">이벤트</li>
+                    <li data-id="#board">자유게시판</li>
                 </ul>
                 <div class="content">
                     <div id="notice" class="on">
@@ -275,17 +282,21 @@
                     </div>
                     <div class="subTitle">
                         <span>꿈을 향한 LG트윈스의 발자취와 <br>
-                        팬 여러분들의 이야기가 함께하는 공간입니다</span>
+                            팬 여러분들의 이야기가 함께하는 공간입니다</span>
                     </div>
                     <div class="sns">
                         <ul>
                             <li><a href="https://www.facebook.com/LGTWINSSEOUL/" target="_blink"></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCL6QZZxb-HR4hCh_eFAnQWA" target="_blink"></a></li>
-                            <li><a href="https://www.instagram.com/lgtwinsbaseballclub/" target="_blink"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCL6QZZxb-HR4hCh_eFAnQWA" target="_blink"></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/lgtwinsbaseballclub/" target="_blink"></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
+
+
         </section>
         <section id="video">
             <div>
@@ -304,13 +315,17 @@
                     <li>
                         <h3>6월에도 변함없이 위닝 트윈스!😉 6월 1일 [덕아웃 직캠]</h3>
                         <span>2023-06-02</span>
-                        <a href="https://www.youtube.com/watch?v=Kst9VKYVSCk&list=PLXh5aUHaYhHk-cXl-QMhCU18pcmHlEpzS&index=1&t=249s" target="_blink">
-                            <img src="images/thubnail1.jpg" alt="6월에도 변함없이 위닝 트윈스!😉 6월 1일 [덕아웃 직캠]" title="6월에도 변함없이 위닝 트윈스!😉 6월 1일 [덕아웃 직캠]">
+                        <a href="https://www.youtube.com/watch?v=Kst9VKYVSCk&list=PLXh5aUHaYhHk-cXl-QMhCU18pcmHlEpzS&index=1&t=249s"
+                            target="_blink">
+                            <img src="images/thubnail1.jpg" alt="6월에도 변함없이 위닝 트윈스!😉 6월 1일 [덕아웃 직캠]"
+                                title="6월에도 변함없이 위닝 트윈스!😉 6월 1일 [덕아웃 직캠]">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/watch?v=6pPObbfQ9ZI&list=PLXh5aUHaYhHk-cXl-QMhCU18pcmHlEpzS&index=2" target="_blink">
-                            <img src="images/thubnail2.jpg" alt="‘500타점 기록을 써내려간 슈퍼참치' 박동원&'선발 11연승 행진' 플럿코의 [트윈스WIN터뷰]" title="‘500타점 기록을 써내려간 슈퍼참치' 박동원&'선발 11연승 행진' 플럿코의 [트윈스WIN터뷰]";>
+                        <a href="https://www.youtube.com/watch?v=6pPObbfQ9ZI&list=PLXh5aUHaYhHk-cXl-QMhCU18pcmHlEpzS&index=2"
+                            target="_blink">
+                            <img src="images/thubnail2.jpg" alt="‘500타점 기록을 써내려간 슈퍼참치' 박동원&'선발 11연승 행진' 플럿코의 [트윈스WIN터뷰]"
+                                title="‘500타점 기록을 써내려간 슈퍼참치' 박동원&'선발 11연승 행진' 플럿코의 [트윈스WIN터뷰]" ;>
                         </a>
                         <div>
                             <h3>‘500타점 기록을 써내려간 슈퍼참치' 박동원& <br>
@@ -319,18 +334,22 @@
                         </div>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/watch?v=wNSdzD24KIY&list=PLXh5aUHaYhHk-cXl-QMhCU18pcmHlEpzS&index=3" target="_blink">
-                            <img src="images/thubnail3.jpg" alt="임찬규 VS 이민호 두 포토그래퍼의 치열한 사진 대결📸 [엘코더]" title="임찬규 VS 이민호 두 포토그래퍼의 치열한 사진 대결📸 [엘코더]">
+                        <a href="https://www.youtube.com/watch?v=wNSdzD24KIY&list=PLXh5aUHaYhHk-cXl-QMhCU18pcmHlEpzS&index=3"
+                            target="_blink">
+                            <img src="images/thubnail3.jpg" alt="임찬규 VS 이민호 두 포토그래퍼의 치열한 사진 대결📸 [엘코더]"
+                                title="임찬규 VS 이민호 두 포토그래퍼의 치열한 사진 대결📸 [엘코더]">
                         </a>
                         <div>
                             <h3>임찬규 VS 이민호 두 포토그래퍼의 <br>
-                                 치열한 사진 대결📸 [엘코더]</h3>
+                                치열한 사진 대결📸 [엘코더]</h3>
                             <span>2023-05-31</span>
                         </div>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/watch?v=d_CCquZUwjo&list=PLXh5aUHaYhHk-cXl-QMhCU18pcmHlEpzS&index=4" target="_blink">
-                            <img src="images/thubnail4.jpg" alt="우리들의 승리 공식, 트윈스의 철벽 불펜과 함께한!‍ 5월 30일 [덕아웃 직캠]" title="우리들의 승리 공식, 트윈스의 철벽 불펜과 함께한!‍ 5월 30일 [덕아웃 직캠]">
+                        <a href="https://www.youtube.com/watch?v=d_CCquZUwjo&list=PLXh5aUHaYhHk-cXl-QMhCU18pcmHlEpzS&index=4"
+                            target="_blink">
+                            <img src="images/thubnail4.jpg" alt="우리들의 승리 공식, 트윈스의 철벽 불펜과 함께한!‍ 5월 30일 [덕아웃 직캠]"
+                                title="우리들의 승리 공식, 트윈스의 철벽 불펜과 함께한!‍ 5월 30일 [덕아웃 직캠]">
                         </a>
                         <div>
                             <h3>우리들의 승리 공식, 트윈스의 철벽 불펜과 <br>
@@ -405,10 +424,11 @@
             </ul>
             <div class="footerText">
                 <p>(주)엘지스포츠 사업자등록번호 : 120-81-57558 통신판매업신고번호 : 2016-서울송파-0646 <br>
-                서울특별시 송파구 올림픽로 25(잠실동, 종합운동장내) 대표이사 : 김인석</p>
+                    서울특별시 송파구 올림픽로 25(잠실동, 종합운동장내) 대표이사 : 김인석</p>
                 <span>©LG Sports.LTD</span>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
