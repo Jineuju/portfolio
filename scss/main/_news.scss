@@ -84,8 +84,6 @@
       height: 23vh;
       margin-right: 2vw;
 
-
-
       .pic {
         width: 105px;
         height: 70px;
@@ -112,57 +110,50 @@
     }
   }
 }
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
   #News {
-  
     .inner {
       width: 23vw;
     }
   }
 }
-@media screen and (max-width:1197px) {
+@media screen and (max-width: 1197px) {
   #News {
-  
     .inner {
       width: 30vw;
       height: 100%;
     }
-  
+
     .wrap {
       padding-top: 70px;
       position: relative;
     }
   }
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   #News {
-  
     .inner {
       width: 40vw;
     }
   }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #News {
-  
     .inner {
       width: 61vw;
     }
     .wrap {
-  
       article {
-
-  
         .content {
           li {
             padding-top: 10px;
             margin-bottom: 5px;
-  
+
             a {
               font: bold 20px/1 "맑은 고딕";
               color: #000;
             }
-  
+
             span {
               font: 12px/1 "맑은 고딕";
             }
@@ -172,36 +163,67 @@
     }
   }
 }
-@media screen and (max-width:425px) {
+
+@media screen and (max-width: 625px) {
   #News {
-  
+    .inner {
+      width: 50vw;
+      left: 4vw;
+      position: relative;
+    }
+    .wrap {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+    article {
+      .content {
+        li {
+          padding-top: 10px;
+          margin-bottom: 5px;
+
+          a {
+            font: bold 18px/1 "맑은 고딕";
+            color: #000;
+          }
+
+          span {
+            font: 12px/1 "맑은 고딕";
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #News {
     .inner {
       width: 80vw;
       left: 9vw;
       position: relative;
     }
-    .wrap{
-      &:nth-child(2){
+    .wrap {
+      &:nth-child(2) {
         display: none;
       }
     }
-      article {
-  
-        .content {
-          li {
-            padding-top: 10px;
-            margin-bottom: 5px;
-  
-            a {
-              font: bold 18px/1 "맑은 고딕";
-              color: #000;
-            }
-  
-            span {
-              font: 12px/1 "맑은 고딕";
-            }
+    article {
+      .content {
+        li {
+          padding-top: 10px;
+          margin-bottom: 5px;
+
+          a {
+            font: bold 18px/1 "맑은 고딕";
+            color: #000;
+          }
+
+          span {
+            font: 12px/1 "맑은 고딕";
           }
         }
       }
     }
+  }
 }

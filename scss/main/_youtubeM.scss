@@ -4,7 +4,7 @@
   position: relative;
   background-color: #fff;
 
-  a{
+  a {
     width: 70px;
     height: 70px;
     .plusBtn {
@@ -18,7 +18,7 @@
       border-radius: 50%;
       cursor: pointer;
       display: none;
-  
+
       &:before {
         content: "";
         display: block;
@@ -29,7 +29,7 @@
         top: 49%;
         transform: rotate(0deg) translateX(25%);
       }
-  
+
       &:after {
         content: "";
         display: block;
@@ -42,7 +42,7 @@
       }
     }
   }
-  
+
   .inner {
     position: absolute;
     top: 50px;
@@ -172,10 +172,10 @@
     }
   }
 }
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
   #video {
     height: 74vh;
-    a{
+    a {
       .plusBtn {
         top: 3vh;
         right: 14vw;
@@ -234,10 +234,10 @@
     }
   }
 }
-@media screen and (max-width:1197px) {
+@media screen and (max-width: 1197px) {
   #video {
     height: 74vh;
-    a{
+    a {
       .plusBtn {
         top: 3vh;
         right: 5vw;
@@ -294,10 +294,10 @@
     }
   }
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   #video {
     height: 74vh;
-    a{
+    a {
       .plusBtn {
         top: 3vh;
         right: 5vw;
@@ -315,7 +315,7 @@
           &:nth-child(1) {
             left: 7vw;
             width: 35vw;
-  
+
             h3 {
               font: bold 25px/1.4 "맑은 고딕";
             }
@@ -363,10 +363,10 @@
     }
   }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #video {
     height: 74vh;
-    a{
+    a {
       .plusBtn {
         top: 3vh;
         right: 5vw;
@@ -384,7 +384,7 @@
           &:nth-child(1) {
             left: 7vw;
             width: 51vw;
-  
+
             h3 {
               font: bold 25px/1.4 "맑은 고딕";
             }
@@ -444,10 +444,10 @@
     }
   }
 }
-@media screen and (max-width:425px) {
+@media screen and (max-width: 625px) {
   #video {
     height: 74vh;
-    a{
+    a {
       .plusBtn {
         top: 3vh;
         right: 5vw;
@@ -456,7 +456,95 @@
     }
     .inner {
       left: 7vw;
-      span{
+      span {
+        display: none;
+      }
+      p {
+        left: 0;
+        font: 14px/1 "맑은 고딕";
+      }
+    }
+    .videoList {
+      ul {
+        li {
+          &:nth-child(1) {
+            left: 3vw;
+            width: 53vw;
+
+            h3 {
+              font: bold 25px/1.4 "맑은 고딕";
+            }
+            span {
+              font: 17px/1 "arial";
+            }
+            a {
+              img {
+                width: 46vw;
+                height: 31vh;
+              }
+            }
+          }
+          &:nth-child(2) {
+            right: 23vw;
+            margin-bottom: 1px;
+
+            div {
+              h3 {
+                font: bold 13px/1.2 "맑은 고딕";
+                display: none;
+              }
+              span {
+                font: 13px/1 "arial";
+                display: none;
+              }
+            }
+          }
+          &:nth-child(3) {
+            right: 23vw;
+            top: 37vh;
+            div {
+              h3 {
+                font: bold 13px/1.2 "맑은 고딕";
+                display: none;
+              }
+              span {
+                font: 13px/1 "arial";
+                display: none;
+              }
+            }
+          }
+          &:nth-child(4) {
+            bottom: 8vh;
+            right: 23vw;
+            div {
+              h3 {
+                font: bold 13px/1.2 "맑은 고딕";
+                display: none;
+              }
+              span {
+                font: 13px/1 "arial";
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  #video {
+    height: 74vh;
+    a {
+      .plusBtn {
+        top: 3vh;
+        right: 5vw;
+        display: none;
+      }
+    }
+    .inner {
+      left: 7vw;
+      span {
         display: none;
       }
       p {
@@ -470,7 +558,7 @@
           &:nth-child(1) {
             left: 3vw;
             width: 51vw;
-  
+
             h3 {
               font: bold 25px/1.4 "맑은 고딕";
             }

@@ -300,7 +300,6 @@
     }
   }
 }
-
 @media screen and (max-width: 1024px) {
   #sosik {
     .inner {
@@ -498,7 +497,54 @@
     }
   }
 }
+@media screen and (max-width: 625px) {
+  #sosik {
+    .inner {
+      top: 5vh;
+      left: 7vw;
+      h1 {
+        font-size: 36px;
+      }
+      span {
+        display: none;
+      }
+    }
 
+    .NGboard {
+      .tab {
+        li {
+          width: 16vw;
+
+          a {
+            font: bold 14px/50px "맑은 고딕";
+          }
+        }
+      }
+
+      .content {
+        #notice,
+        #event,
+        #board {
+          width: 90vw;
+
+          ul {
+            li {
+              width: 80vw;
+              a {
+                font: bold 16px/1.3 "맑은 고딕";
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .snsContent {
+      display: none;
+    }
+  }
+}
 @media screen and (max-width: 425px) {
   #sosik {
     .inner {

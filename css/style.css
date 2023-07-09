@@ -900,6 +900,114 @@ main .banners #banner2 .navi .next span {
     opacity: 1;
   }
 }
+@media screen and (max-width: 625px) {
+  main .banners #banner1 {
+    width: 0%;
+  }
+  main .banners #banner1 .baro .lucky {
+    left: 13vw;
+    display: none;
+  }
+  main .banners #banner1 .baro .star {
+    left: 19vw;
+    display: none;
+  }
+  main .banners #banner1 .baro span {
+    left: 6vw;
+    display: none;
+  }
+  main .banners #banner1 .baro a {
+    left: 5.5vw;
+    display: none;
+  }
+  main .banners #banner2 {
+    width: 100%;
+  }
+  main .banners #banner2 .baro2 li h3 {
+    font: bold 23px/6vh "맑은 고딕";
+    color: #fff;
+  }
+  main .banners #banner2 .baro2 li p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font: 20px/8vh "맑은 고딕";
+    color: #fff;
+  }
+  main .banners #banner2 .baro2 li p span {
+    font: bold 37px/8vh "맑은 고딕";
+    margin: 0 20px;
+  }
+  main .banners #banner2 .baro2 li p span .span1 {
+    color: #f3306e;
+    margin: 0px;
+  }
+  main .banners #banner2 .navi {
+    display: flex;
+    position: absolute;
+    top: 6vh;
+    left: 1vw;
+  }
+  main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after {
+    left: 25px;
+    transform-origin: left center;
+  }
+  main .banners #banner2 .navi .prev span {
+    left: 25px;
+  }
+  main .banners #banner2 .navi .next {
+    position: absolute;
+    left: 73vw;
+  }
+  main .banners #banner2 .navi .next::before, main .banners #banner2 .navi .next::after {
+    right: 25px;
+    transform-origin: right center;
+  }
+  main .banners #banner2 .navi .next span {
+    right: 25px;
+  }
+  main .banners #banner2 .navi .prev,
+  main .banners #banner2 .navi .next {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #555;
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+    background-color: #fff;
+  }
+  main .banners #banner2 .navi .prev::before, main .banners #banner2 .navi .prev::after,
+  main .banners #banner2 .navi .next::before,
+  main .banners #banner2 .navi .next::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+  }
+  main .banners #banner2 .navi .prev::before,
+  main .banners #banner2 .navi .next::before {
+    top: 49%;
+    transform: rotate(45deg) translateX(0px);
+  }
+  main .banners #banner2 .navi .prev::after,
+  main .banners #banner2 .navi .next::after {
+    bottom: 49%;
+    transform: rotate(-45deg) translateX(0px);
+  }
+  main .banners #banner2 .navi .prev span,
+  main .banners #banner2 .navi .next span {
+    width: 24px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+    top: 49%;
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 425px) {
   main .banners #banner2 {
     width: 100%;
@@ -1400,6 +1508,43 @@ main #sosik .snsContent .inner .sns ul li:nth-child(3) a {
     display: block;
   }
 }
+@media screen and (max-width: 625px) {
+  main #sosik .inner {
+    top: 5vh;
+    left: 7vw;
+  }
+  main #sosik .inner h1 {
+    font-size: 36px;
+  }
+  main #sosik .inner span {
+    display: none;
+  }
+  main #sosik .NGboard .tab li {
+    width: 16vw;
+  }
+  main #sosik .NGboard .tab li a {
+    font: bold 14px/50px "맑은 고딕";
+  }
+  main #sosik .NGboard .content #notice,
+  main #sosik .NGboard .content #event,
+  main #sosik .NGboard .content #board {
+    width: 90vw;
+  }
+  main #sosik .NGboard .content #notice ul li,
+  main #sosik .NGboard .content #event ul li,
+  main #sosik .NGboard .content #board ul li {
+    width: 80vw;
+  }
+  main #sosik .NGboard .content #notice ul li a,
+  main #sosik .NGboard .content #event ul li a,
+  main #sosik .NGboard .content #board ul li a {
+    font: bold 16px/1.3 "맑은 고딕";
+    color: #000;
+  }
+  main #sosik .snsContent {
+    display: none;
+  }
+}
 @media screen and (max-width: 425px) {
   main #sosik .inner {
     top: 5vh;
@@ -1664,6 +1809,27 @@ main #News .wrap article .content li span {
     font: 12px/1 "맑은 고딕";
   }
 }
+@media screen and (max-width: 625px) {
+  main #News .inner {
+    width: 50vw;
+    left: 4vw;
+    position: relative;
+  }
+  main #News .wrap:nth-child(2) {
+    display: none;
+  }
+  main #News article .content li {
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+  main #News article .content li a {
+    font: bold 18px/1 "맑은 고딕";
+    color: #000;
+  }
+  main #News article .content li span {
+    font: 12px/1 "맑은 고딕";
+  }
+}
 @media screen and (max-width: 425px) {
   main #News .inner {
     width: 80vw;
@@ -1912,14 +2078,14 @@ main #photo #more:hover {
   }
   main #photo .btn .next {
     position: absolute;
-    left: 55vw;
+    left: 82vw;
     z-index: 10;
   }
   main #photo .btn #more {
     display: block;
     position: absolute;
-    width: 40vw;
-    left: 28vw;
+    width: 45vw;
+    left: 26vw;
     bottom: 5px;
     height: 70px;
     border: none;
@@ -2384,6 +2550,76 @@ main #video .videoList ul li:nth-child(4) div span {
   main #video .videoList ul li:nth-child(4) {
     bottom: 8vh;
     right: 20vw;
+  }
+  main #video .videoList ul li:nth-child(4) div h3 {
+    font: bold 13px/1.2 "맑은 고딕";
+    display: none;
+  }
+  main #video .videoList ul li:nth-child(4) div span {
+    font: 13px/1 "arial";
+    display: none;
+  }
+}
+@media screen and (max-width: 625px) {
+  main #video {
+    height: 74vh;
+  }
+  main #video a .plusBtn {
+    top: 3vh;
+    right: 5vw;
+    display: none;
+  }
+  main #video .inner {
+    left: 7vw;
+  }
+  main #video .inner span {
+    display: none;
+  }
+  main #video .inner p {
+    left: 0;
+    font: 14px/1 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(1) {
+    left: 3vw;
+    width: 53vw;
+  }
+  main #video .videoList ul li:nth-child(1) h3 {
+    font: bold 25px/1.4 "맑은 고딕";
+  }
+  main #video .videoList ul li:nth-child(1) span {
+    font: 17px/1 "arial";
+  }
+  main #video .videoList ul li:nth-child(1) a img {
+    width: 46vw;
+    height: 31vh;
+  }
+  main #video .videoList ul li:nth-child(2) {
+    right: 23vw;
+    margin-bottom: 1px;
+  }
+  main #video .videoList ul li:nth-child(2) div h3 {
+    font: bold 13px/1.2 "맑은 고딕";
+    display: none;
+  }
+  main #video .videoList ul li:nth-child(2) div span {
+    font: 13px/1 "arial";
+    display: none;
+  }
+  main #video .videoList ul li:nth-child(3) {
+    right: 23vw;
+    top: 37vh;
+  }
+  main #video .videoList ul li:nth-child(3) div h3 {
+    font: bold 13px/1.2 "맑은 고딕";
+    display: none;
+  }
+  main #video .videoList ul li:nth-child(3) div span {
+    font: 13px/1 "arial";
+    display: none;
+  }
+  main #video .videoList ul li:nth-child(4) {
+    bottom: 8vh;
+    right: 23vw;
   }
   main #video .videoList ul li:nth-child(4) div h3 {
     font: bold 13px/1.2 "맑은 고딕";
